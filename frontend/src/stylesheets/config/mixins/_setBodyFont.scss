@@ -1,0 +1,29 @@
+@mixin setBodyFont ($size) {
+
+  font-family: $body;
+  font-size: $size;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.32;
+
+  em {
+
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.32;
+
+  }
+
+  @media screen and (min-width: 600px) {
+
+    font-size: calc($size * 1.16);
+    
+  }
+
+  @media screen and (min-width: 768px) {
+
+    font-size: calc($size * 1.16 * 1.16);
+    
+  }
+
+}

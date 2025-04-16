@@ -1,0 +1,40 @@
+#footer-container {
+
+  @extend .container;
+  @include setBackgroundColor($dark);
+  z-index: 5;
+
+  #footer-wrapper {
+
+    @extend .flex, .justify-between, .align-center, .px-8, .py-4;
+
+    #brand {
+
+      @extend .flex, .align-center, .gap-4;
+
+      #logo {
+
+        @include setBrandFont(8px);
+
+      }
+
+      .copyright {
+
+        @extend .mt-2;
+        @include setHeadingFont(8px);
+        font-weight: 300;
+
+      }
+
+    }
+
+    .right {
+
+      @include setHeadingFont(8px);
+      font-weight: 300;
+
+    }
+
+  }
+
+}

@@ -1,0 +1,106 @@
+.btn {
+
+  @extend .flex, .align-center;
+  @include setBackgroundColor($primary);
+  @include setMenuFont(12px);
+  font-weight: 400;
+  text-transform: none;
+  line-height: normal;
+
+  &:not(:disabled) {
+
+    @extend .clickable;
+
+  }
+
+  * {
+
+    color: $light;
+
+  }
+
+  &.sm {
+
+    @extend .gap-4, .px-16, .py-8, .br-6;
+
+    svg {
+
+      font-size: 14px;
+      
+    }
+    
+  }
+  
+  &.md {
+    
+    @extend .gap-6, .px-16, .py-12, .br-8;
+    font-size: 14px;
+
+    svg {
+
+      font-size: 16px;
+      
+    }
+    
+    @media screen and (max-width: 379px) {
+      
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 12px;
+  
+      svg {
+  
+        font-size: 14px;
+        
+      }
+      
+    }
+    
+  }
+  
+  &.lg {
+    
+    @extend .gap-8, .px-24, .py-16, .br-12;
+    font-size: 16px;
+
+    svg {
+
+      font-size: 20px;
+      
+    }
+    
+    @media screen and (max-width: 379px) {
+      
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+  
+      svg {
+  
+        font-size: 18px;
+        
+      }
+
+    }
+
+  }
+
+  &:hover {
+
+    font-weight: 400;
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    @include setBackgroundColor($secondary);
+
+  }
+
+  &:disabled {
+
+    background-color: rgb(0, 0, 0, 0.32);
+
+  }
+
+}

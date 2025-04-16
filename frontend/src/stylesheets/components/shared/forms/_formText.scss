@@ -1,0 +1,30 @@
+.form-text,
+.form-text > a {
+
+  @extend .ta-center;
+  @include setBodyFont(14px);
+  text-transform: none;
+  
+  @media screen and (max-width: 379px) {
+
+    font-size: 12px;
+    
+  }
+  
+}
+
+.form-text > a {
+  
+  &:hover {
+    
+    color: darken($primary, 8%);
+    
+    @media (prefers-color-scheme: dark) {
+      
+      color: darken($secondary, 8%);
+      
+    }
+    
+  }
+  
+}

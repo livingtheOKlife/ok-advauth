@@ -1,0 +1,25 @@
+h2 {
+
+  @include setHeadingFont(32px);
+  text-transform: uppercase;
+
+}
+
+h3 {
+
+  @include setHeadingFont(28px);
+  text-transform: uppercase;
+
+}
+
+h4 {
+
+  @include setHeadingFont(20px);
+
+}
+
+h5 {
+
+  @include setHeadingFont(18px);
+
+}

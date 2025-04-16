@@ -1,0 +1,35 @@
+.form-control {
+
+  @extend .flex, .flex-col, .gap-4;
+
+  .icon-input {
+
+    @extend .relative;
+
+    .input-icon {
+
+      @extend .absolute;
+      @include setBodyFont(14px);
+      right: 16px;
+      bottom: 15px;
+
+    }
+
+  }
+
+  .input-text {
+
+    @extend .ml-16;
+    @include setBodyFont(9px);
+    margin-top: -2px;
+    color: $red;
+    
+    @media (prefers-color-scheme: dark) {
+      
+      color: $red;
+      
+    }
+  
+  }
+  
+}

@@ -1,0 +1,31 @@
+.h-100 {
+
+  height: 100%;
+
+}
+
+.w-100 {
+
+  width: 100%;
+
+}
+
+@each $i in $bits {
+
+  .h-#{$i} {
+
+    height: #{$i}px;
+
+  }
+
+}
+
+@each $i in $bits {
+
+  .w-#{$i} {
+
+    width: #{$i}px;
+
+  }
+
+}

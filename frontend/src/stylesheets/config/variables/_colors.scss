@@ -1,0 +1,47 @@
+$primary: hsl(210, 96%, 40%);
+$primary-light: lighten($primary, 24%);
+$primary-dark: darken($primary, 24%);
+
+$secondary: hsl(32, 96%, 48%);
+$secondary-light: lighten($secondary, 24%);
+$secondary-dark: darken($secondary, 24%);
+
+$dark: hsl(210, 100%, 4%);
+$light: hsl(210, 0%, 98%);
+
+$gold: hsl(43, 68%, 56%);
+$silver: hsl(0, 0%, 75%);
+$bronze: hsl(32, 45%, 42%);
+
+$red: hsl(0, 64%, 55%);
+$red-light: lighten($red, 20%);
+$red-dark: darken($red, 20%);
+
+$orange: hsl(29, 98%, 48%);
+$orange-light: lighten($orange, 20%);
+$orange-dark: darken($orange, 20%);
+$sun-orange: hsl(27, 93%, 50%);
+
+$yellow: hsl(43, 100%, 65%);
+$yellow-light: lighten($yellow, 20%);
+$yellow-dark: darken($yellow, 20%);
+$sun-yellow: hsl(56, 100%, 50%);
+$sand-yellow: hsl(51, 80%, 70%);
+
+$green: hsl(92, 55%, 43%);
+$green-light: lighten($green, 20%);
+$green-dark: darken($green, 20%);
+
+$blue: hsl(211, 45%, 48%);
+$blue-light: lighten($blue, 20%);
+$blue-dark: darken($blue, 20%);
+$sky-blue: hsl(194, 95%, 74%);
+
+$purple: hsl(285, 42%, 53%);
+$purple-light: lighten($purple, 20%);
+$purple-dark: darken($purple, 20%);
+
+$react: #61DBFB;
+$node: #68A063;
+$sass: #CD6799;
+$php: #B0B3D6;

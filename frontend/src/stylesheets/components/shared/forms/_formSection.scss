@@ -1,0 +1,43 @@
+.form-section {
+  
+  @extend .flex, .flex-col, .align-center, .gap-16, .w-100;
+
+  .form-control {
+
+    width: 90%;
+
+  }
+
+  .btn {
+
+    width: 90%;
+    font-weight: 600;
+
+    svg {
+
+      margin: 0 4px -2px 4px;
+      font-size: 12px;
+
+    }
+    
+    &:hover {
+      
+      font-weight: 600;
+
+    }
+
+  }
+
+  &:last-of-type {
+
+    @extend .justify-center;
+
+    .nav-link {
+
+      @extend .mt-8;
+
+    }
+
+  }
+
+}

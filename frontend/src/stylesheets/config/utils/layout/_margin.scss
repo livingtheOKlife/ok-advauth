@@ -1,0 +1,54 @@
+.mx-auto {
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+@each $i in $bits {
+
+  .m-#{$i} {
+
+    margin: #{$i}px;
+
+  }
+
+  .ml-#{$i} {
+
+    margin-left: #{$i}px;
+
+  }
+
+  .mr-#{$i} {
+
+    margin-right: #{$i}px;
+
+  }
+
+  .mt-#{$i} {
+
+    margin-top: #{$i}px;
+
+  }
+
+  .mb-#{$i} {
+
+    margin-bottom: #{$i}px;
+
+  }
+
+  .mx-#{$i} {
+
+    margin-left: #{$i}px;
+    margin-right: #{$i}px;
+
+  }
+
+  .my-#{$i} {
+
+    margin-top: #{$i}px;
+    margin-bottom: #{$i}px;
+
+  }
+
+}

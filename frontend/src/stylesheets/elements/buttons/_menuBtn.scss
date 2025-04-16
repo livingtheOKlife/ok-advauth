@@ -1,0 +1,122 @@
+.menu-btn {
+	
+  @extend .relative, .flex, .flex-col, .justify-center, .align-center, .h-40, .w-40;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+	.bar {
+
+    @extend .relative, .h-4, .w-28, .br-2;
+		background-color: $dark;
+		box-shadow: 1px 4px 10px 2px rgb(0, 0, 0, 0.16);
+		
+		&.basic {
+			
+			-webkit-animation: none !important;
+			animation: none !important;
+			
+		}
+		
+		&:nth-of-type(1) {
+			
+			top: -5px;
+			animation: topBarRev 0.64s ease-in-out;
+			
+		}
+
+		&:nth-of-type(2) {
+			
+			top: 0;
+			animation: midBarRev 0.64s ease-in-out;
+			
+		}
+		
+		&:nth-of-type(3) {
+			
+			top: 5px;
+			animation: botBarRev 0.64s ease-in-out;
+			
+		}
+		
+		@media (prefers-color-scheme: dark) {
+			
+			background-color: $light;
+
+		}
+
+	}
+	
+	&.active {
+		
+		.bar {
+			
+			&:nth-of-type(1) {
+	
+				animation: topBar 0.64s forwards ease-in-out;
+
+			}
+			
+			&:nth-of-type(2) {
+
+				animation: midBar 0.64s forwards ease-in-out;
+
+			}
+			
+			&:nth-of-type(3) {
+
+				animation: botBar 0.64s forwards ease-in-out;
+
+			}
+
+		}
+		
+	}
+	
+	@keyframes topBarRev {
+	
+		0% {transform: translate3d(0, 9px, 0) rotate(135deg);}
+		50% {transform: translate3d(0, 9px, 0) rotate(0);}
+		100% {transform: translate3d(0, 0, 0) rotate(0deg);}
+
+	}
+
+	@keyframes topBar {
+
+		0% {transform: translate3d(0, 0, 0) rotate(0deg);}
+		50% {transform: translate3d(0, 9px, 0) rotate(0);}
+		100% {transform: translate3d(0, 9px, 0) rotate(135deg);}
+
+	}
+
+	@keyframes midBarRev {
+
+		0% {transform: scale(0);}
+		100% {transform: scale(1);}
+
+	}
+
+	@keyframes midBar {
+
+		0% {transform: scale(1);}
+		100% {transform: scale(0);}
+
+	}
+
+	@keyframes botBarRev {
+
+		0% {transform: translate3d(0, -9px, 0) rotate(-135deg);}
+		50% {transform: translate3d(0, -9px, 0) rotate(0);}
+		100% {transform: translate3d(0, 0, 0) rotate(0deg);}
+
+	}
+
+	@keyframes botBar {
+
+		0% {transform: translateY(0px);}
+		50% {transform: translateY(-9px);}
+		100% {transform: translateY(-9px) rotateZ(-135deg);}
+
+	}
+	
+}

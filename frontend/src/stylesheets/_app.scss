@@ -1,0 +1,16 @@
+.App {
+
+  @extend .relative, .flex, .flex-col, .justify-between;
+  @include setBackgroundColor($light);
+  height: 100dvh;
+  max-width: 100dvh;
+  width: 100dvw;
+  max-width: 100dvw;
+
+  @media (prefers-color-scheme: dark) {
+
+    @include setBackgroundColor ($dark);
+    
+  }
+
+}

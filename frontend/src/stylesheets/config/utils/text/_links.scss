@@ -1,0 +1,26 @@
+a {
+
+  @include setLinkFont(12px);
+  color: $primary;
+  transition: all 0.08s ease-in-out;
+
+  &.nav-link {
+
+    @extend .p-8;
+    @include setLinkFont(14px);
+
+  }
+
+  &:hover {
+
+    font-weight: 600;
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    color: $secondary;
+
+  }
+
+}

@@ -1,0 +1,47 @@
+@each $i in $bits {
+
+  .p-#{$i} {
+
+    padding: #{$i}px;
+
+  }
+
+  .pl-#{$i} {
+
+    padding-left: #{$i}px;
+
+  }
+
+  .pr-#{$i} {
+
+    padding-right: #{$i}px;
+
+  }
+
+  .pt-#{$i} {
+
+    padding-top: #{$i}px;
+
+  }
+
+  .pb-#{$i} {
+
+    padding-bottom: #{$i}px;
+
+  }
+
+  .px-#{$i} {
+
+    padding-left: #{$i}px;
+    padding-right: #{$i}px;
+
+  }
+
+  .py-#{$i} {
+
+    padding-top: #{$i}px;
+    padding-bottom: #{$i}px;
+
+  }
+
+}

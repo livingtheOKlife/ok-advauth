@@ -1,0 +1,19 @@
+.clickable {
+
+  transition: scale 0.08s ease-in-out;
+
+  &:hover {
+
+    scale: 1.04;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  }
+
+  &.click {
+
+    scale: 0.96;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px, rgba(0, 0, 0, 0.16) 0px 0px 0px;
+
+  }
+
+}

@@ -1,0 +1,17 @@
+.form-header {
+    
+  @extend .flex, .flex-col, .align-center, .gap-12, .mb-8;
+  
+  .form-heading {
+    
+    @extend h4;
+    
+  }
+  
+  .form-subheading {
+    
+    @extend p, .ta-center;
+    
+  }
+  
+}

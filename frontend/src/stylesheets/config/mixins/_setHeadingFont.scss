@@ -1,0 +1,68 @@
+@mixin setHeadingFont ($size) {
+
+  font-family: $heading;
+  font-size: $size;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  
+  em {
+    
+    letter-spacing: 0;
+    color: $primary;
+
+  }
+
+  .logo {
+
+    @include setLogoFont(calc($size / 1.16));
+
+  }
+
+  @media screen and (max-width: 379px) {
+
+    font-size: calc($size / 1.16);
+
+    .logo {
+  
+      @include setLogoFont(calc($size / 1.32));
+  
+    }
+
+  }
+
+  @media screen and (min-width: 600px) {
+
+    font-size: calc($size * 1.16);
+
+    .logo {
+  
+      @include setLogoFont($size);
+  
+    }
+    
+  }
+
+  @media screen and (min-width: 768px) {
+
+    font-size: calc($size * 1.16 * 1.16);
+
+    .logo {
+  
+      @include setLogoFont(calc($size * 1.16));
+  
+    }
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    em {
+
+      color: $secondary;
+
+    }
+
+  }
+
+}

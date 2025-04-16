@@ -1,0 +1,16 @@
+.input-btn {
+
+  @extend .absolute, .flex, .align-center, .h-100, .px-16;
+  bottom: 0;
+  right: 0;
+  border-radius: 0 6px 6px 0;
+  background-color: rgb(0, 0, 0, 0);
+  transition: all 0.08s ease-in-out;
+  
+  svg {
+
+    @include setBodyFont(14px);
+
+  }
+
+}

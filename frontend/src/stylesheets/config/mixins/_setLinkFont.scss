@@ -1,0 +1,36 @@
+@mixin setLinkFont ($size) {
+
+  font-family: $menu;
+  font-size: $size;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.16px;
+  line-height: 1;
+  color: $primary;
+  transition: all 0.08s ease-in-out;
+
+  &:hover {
+
+    font-weight: 600;
+
+  }
+
+  @media screen and (min-width: 600px) {
+
+    font-size: calc($size * 1.16);
+    
+  }
+
+  @media screen and (min-width: 768px) {
+
+    font-size: calc($size * 1.16 * 1.16);
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    color: $secondary;
+
+  }
+
+}

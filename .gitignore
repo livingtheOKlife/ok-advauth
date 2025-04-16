@@ -1,0 +1,6 @@
+#root .gitignore
+node_modules
+.env
+
+#other
+notes

@@ -1,0 +1,56 @@
+.spinner {
+
+  @extend .self-center, .mx-auto;
+  width: auto;
+
+  .spinner-background {
+
+    @extend .relative, .flex, .justify-center, .align-center, .h-32, .w-32, .circle;
+    background-image: conic-gradient($primary 33%, darken($light, 2%) 66% 100%);
+    animation: rotate 1s infinite linear;
+    
+    .spinner-ball {
+      
+      @extend .absolute, .circle;
+      top: 0;
+      left: calc(50% - 2px);
+      height: 5px;
+      width: 5px;
+      background-color: $primary;
+      
+    }
+    
+    .spinner-foreground {
+      
+      @extend .circle;
+      height: calc(100% - 10px);
+      width: calc(100% - 10px);
+      background: darken($light, 2%);
+      
+    }
+    
+    @keyframes rotate {
+      
+      100% {
+        
+        rotate: -360deg;
+        
+      }
+      
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      
+      background-image: conic-gradient($primary 33%, $dark 66% 100%);
+
+      .spinner-foreground {
+        
+        background: $dark;
+        
+      }
+      
+    }
+
+  }
+
+}

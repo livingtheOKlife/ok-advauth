@@ -1,0 +1,17 @@
+@mixin setMenuFont ($size) {
+
+  font-family: $menu;
+  font-size: $size;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.16px;
+  line-height: 1;
+  transition: all 0.08s ease-in-out;
+
+  &:hover {
+
+    font-weight: 600;
+
+  }
+
+}

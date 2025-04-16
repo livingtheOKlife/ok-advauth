@@ -1,0 +1,39 @@
+p {
+
+  @include setBodyFont(12px);
+  
+  a {
+    
+    @include setBodyFont(12px);
+    text-transform: none;
+    
+    * {
+      
+      @include setBodyFont(8px);
+      font-weight: 100;
+      color: $primary;
+
+    }
+
+    &:hover {
+
+      font-weight: 400;
+      color: darken($primary, 8%);
+      
+      * {
+        
+        color: darken($primary, 8%);
+
+      }
+
+    }
+
+  }
+  
+  @media screen and (max-width: 379px) {
+
+    font-size: 10px;
+    
+  }
+
+}

@@ -1,0 +1,55 @@
+.form-widget {
+
+  @extend .widget, .flex, .flex-col, .align-center, .gap-16, .px-24, .py-32, .br-8;
+  @include setBackgroundColor($light);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px, rgba(0, 0, 0, 0.16) 0px 2px 8px;
+  
+  > * {
+    
+    @extend .packet;
+    
+  }
+  
+  .btn {
+
+    @extend .my-16, .inline-block;
+    
+    @media screen and (min-width: 768px) {
+      
+      font-size: 16px;
+      
+    }
+    
+  }
+
+  .spinner {
+
+    margin: 21px auto;
+
+  }
+
+  label {
+
+    margin-left: 17px;
+
+  }
+  
+  @media screen and (max-width: 379px) {
+    
+    padding: 24px 16px;
+    
+  }
+  
+  @media screen and (min-width: 600px) {
+    
+    padding: 40px 32px;
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    
+    @include setBackgroundColor($dark);
+    
+  }
+
+}

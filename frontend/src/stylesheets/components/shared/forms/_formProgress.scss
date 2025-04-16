@@ -1,0 +1,113 @@
+.form-progress {
+
+  @extend .relative, .mb-24;
+  width: 200px;
+
+  .form-progress-numbers {
+
+    @extend .absolute, .flex, .justify-between;
+    @include setHeadingFont(9px);
+    top: -12px;
+    left: -1px;
+    width: calc(100% + 4px);
+
+    .form-progress-number {
+
+      font-size: 9px;
+
+    }
+
+  }
+
+  .form-progress-bar {
+
+    @extend .absolute, .h-4, .w-100, .br-2, .overflow-hidden;
+    top: 4px;
+    background-color: rgb(0, 0, 0, 0.16);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 4px inset, rgba(0, 0, 0, 0.08) 0px 1px 4px inset;
+
+    .form-progress-bar-fill {
+
+      @extend .h-100;
+      @include setBackgroundColor($green);
+      transition: all 0.32s ease-in-out;
+
+      &.first {
+
+        width: 0%;
+
+      }
+
+      &.second {
+
+        width: 50%;
+
+      }
+
+      &.third {
+
+        width: 100%;
+
+      }
+
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+      background-color: rgb(255, 255, 255, 0.16);
+      
+    }
+
+  }
+
+  .form-progress-ball {
+
+    @extend .absolute, .h-12, .w-12, .circle;
+    border: 3px solid $light;
+    background-color: $green;
+    top: 0;
+    left: -6px;
+    transform: translateX(0);
+    transition: all 0.32s ease-in-out;
+
+    &.first {
+
+      transform: translateX(0);
+      
+    }
+    
+    &.second {
+      
+      transform: translateX(100px);
+      
+    }
+    
+    &.third {
+      
+      transform: translateX(200px);
+
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+      border: 3px solid $dark;
+      
+    }
+
+  }
+
+  .form-progress-details {
+
+    @extend .absolute, .flex, .justify-between, .w-100;
+    @include setHeadingFont(9px);
+    top: 16px;
+
+    .form-progress-detail {
+
+      @extend .w-100, .ta-center;
+      font-size: 9px;
+
+    }
+
+  }
+}
