@@ -1,12 +1,43 @@
 import { useContext } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
+
+import { FaX } from 'react-icons/fa6'
 
 import MenuContext from '../../context/menu/MenuContext'
 
 function MenuContainer () {
-  const { menu } = useContext(MenuContext)
+  const { menu, setMenuInactive } = useContext(MenuContext)
+  const navigate = useNavigate()
+  const location = useLocation()
+  const pathMatchRoute = (route) => {
+    if (route === location.pathname) {
+      return true
+    }
+  }
   return menu !== null &&
     <aside id="menu-container">
-      MenuContainer
+      <nav id="menu-nav">
+        <ul className="menu-nav-list">
+          {
+            !pathMatchRoute('/page-not-found') &&
+              <li className="menu-nav-item" onClick={() => {
+                navigate('/page-not-found')
+                setMenuInactive()
+              }}>Page not found</li>
+          }
+          {
+            !pathMatchRoute('/about') &&
+              <li className="menu-nav-item" onClick={() => {
+                navigate('/about')
+                setMenuInactive()
+              }}>About</li>
+          }
+        </ul>
+        <button type="button" onClick={setMenuInactive}>
+          Close
+          <FaX />
+        </button>
+      </nav>
     </aside>
 }
 
