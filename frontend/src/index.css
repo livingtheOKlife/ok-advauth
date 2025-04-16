@@ -59,7 +59,7 @@ input::-ms-clear {
   margin: 0 auto;
 }
 
-.packet, .form-widget > * {
+.packet, .form-widget > *, .about-page .main-wrapper h4, .about-page .main-wrapper .form-header .form-heading, .form-header .about-page .main-wrapper .form-heading, .about-page .main-wrapper p, .about-page .main-wrapper .form-header .form-subheading, .form-header .about-page .main-wrapper .form-subheading, .about-page .page-not-found-page .main-wrapper span, .page-not-found-page .about-page .main-wrapper span, .home-page .main-wrapper p, .home-page .main-wrapper .form-header .form-subheading, .form-header .home-page .main-wrapper .form-subheading, .home-page .page-not-found-page .main-wrapper span, .page-not-found-page .home-page .main-wrapper span {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
@@ -71,11 +71,11 @@ input::-ms-clear {
   margin: 0 auto;
 }
 
-.flex, .tags .tag, .tags, .input-btn, .btn, .menu-btn, .spinner .spinner-background, .form-control, .form-section, .form-divider, .form-progress .form-progress-details, .form-progress .form-progress-numbers, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, #header-container #main-nav, .App {
+.flex, .tags .tag, .tags, .input-btn, .btn, .menu-btn, .spinner .spinner-background, .form-control, .form-section, .form-divider, .form-progress .form-progress-details, .form-progress .form-progress-numbers, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper .buttons, .home-page .main-wrapper, .App {
   display: flex;
 }
 
-.flex-col, .menu-btn, .form-control, .form-section, .form-header, .form-widget, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, .App {
+.flex-col, .menu-btn, .form-control, .form-section, .form-header, .form-widget, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper, .App {
   flex-direction: column;
 }
 
@@ -91,7 +91,7 @@ input::-ms-clear {
   display: inline-block;
 }
 
-.justify-center, .menu-btn, .spinner .spinner-background, .form-section:last-of-type, #alert-zeta .alert-btn, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item {
+.justify-center, .menu-btn, .spinner .spinner-background, .form-section:last-of-type, #alert-zeta .alert-btn, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper .buttons, .home-page .main-wrapper {
   justify-content: center;
 }
 
@@ -107,7 +107,7 @@ input::-ms-clear {
   justify-content: end;
 }
 
-.align-center, .tags, .input-btn, .btn, .menu-btn, .spinner .spinner-background, .form-section, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #header-container #main-nav .main-nav-list, #header-container #main-nav {
+.align-center, .tags, .input-btn, .btn, .menu-btn, .spinner .spinner-background, .form-section, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #header-container #main-nav .main-nav-list, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper {
   align-items: center;
 }
 
@@ -131,7 +131,7 @@ input::-ms-clear {
   gap: 3px;
 }
 
-.gap-4, .btn.sm, .form-control, #footer-container #footer-wrapper #brand, #header-container #main-nav .main-nav-list {
+.gap-4, .btn.sm, .form-control, #footer-container #footer-wrapper #brand, #header-container #main-nav .main-nav-list, .page-not-found-page .main-wrapper {
   gap: 4px;
 }
 
@@ -139,7 +139,7 @@ input::-ms-clear {
   gap: 6px;
 }
 
-.gap-8, .btn.lg, #alert-zeta, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item {
+.gap-8, .btn.lg, #alert-zeta, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper {
   gap: 8px;
 }
 
@@ -151,7 +151,7 @@ input::-ms-clear {
   gap: 12px;
 }
 
-.gap-16, .tags, .form-section, .form-widget {
+.gap-16, .tags, .form-section, .form-widget, .home-page .main-wrapper .buttons {
   gap: 16px;
 }
 
@@ -405,7 +405,7 @@ input::-ms-clear {
        column-gap: 256px;
 }
 
-.h-100, .input-btn, .form-progress .form-progress-bar .form-progress-bar-fill, #alert-zeta .alert-progress-bg .alert-progress-bar, #main-container, #menu-container #menu-nav {
+.h-100, .input-btn, .form-progress .form-progress-bar .form-progress-bar-fill, #alert-zeta .alert-progress-bg .alert-progress-bar, #main-container, #menu-container #menu-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper, .home-page .main-wrapper {
   height: 100%;
 }
 
@@ -829,7 +829,7 @@ input::-ms-clear {
   padding-bottom: 12px;
 }
 
-.p-16, #menu-container {
+.p-16, #menu-container, .home-page .main-wrapper {
   padding: 16px;
 }
 
@@ -949,7 +949,7 @@ input::-ms-clear {
   padding-bottom: 28px;
 }
 
-.p-32 {
+.p-32, .page-not-found-page .main-wrapper {
   padding: 32px;
 }
 
@@ -1722,11 +1722,11 @@ input::-ms-clear {
   margin-right: 32px;
 }
 
-.mt-32 {
+.mt-32, .about-page .main-wrapper .about, .home-page .main-wrapper .buttons {
   margin-top: 32px;
 }
 
-.mb-32, #menu-container #menu-nav button {
+.mb-32, #menu-container #menu-nav button, .page-not-found-page .main-wrapper span {
   margin-bottom: 32px;
 }
 
@@ -2458,29 +2458,29 @@ h5 .logo em {
   }
 }
 
-p, .form-header .form-subheading {
+p, .form-header .form-subheading, .page-not-found-page .main-wrapper span {
   font-family: "Quicksand", sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.32;
 }
-p em, .form-header .form-subheading em {
+p em, .form-header .form-subheading em, .page-not-found-page .main-wrapper span em {
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.32;
 }
 @media screen and (min-width: 600px) {
-  p, .form-header .form-subheading {
+  p, .form-header .form-subheading, .page-not-found-page .main-wrapper span {
     font-size: 13.92px;
   }
 }
 @media screen and (min-width: 768px) {
-  p, .form-header .form-subheading {
+  p, .form-header .form-subheading, .page-not-found-page .main-wrapper span {
     font-size: 16.1472px;
   }
 }
-p a, .form-header .form-subheading a {
+p a, .form-header .form-subheading a, .page-not-found-page .main-wrapper span a {
   font-family: "Quicksand", sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -2488,22 +2488,22 @@ p a, .form-header .form-subheading a {
   line-height: 1.32;
   text-transform: none;
 }
-p a em, .form-header .form-subheading a em {
+p a em, .form-header .form-subheading a em, .page-not-found-page .main-wrapper span a em {
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.32;
 }
 @media screen and (min-width: 600px) {
-  p a, .form-header .form-subheading a {
+  p a, .form-header .form-subheading a, .page-not-found-page .main-wrapper span a {
     font-size: 13.92px;
   }
 }
 @media screen and (min-width: 768px) {
-  p a, .form-header .form-subheading a {
+  p a, .form-header .form-subheading a, .page-not-found-page .main-wrapper span a {
     font-size: 16.1472px;
   }
 }
-p a *, .form-header .form-subheading a * {
+p a *, .form-header .form-subheading a *, .page-not-found-page .main-wrapper span a * {
   font-family: "Quicksand", sans-serif;
   font-size: 8px;
   font-weight: 400;
@@ -2512,30 +2512,30 @@ p a *, .form-header .form-subheading a * {
   font-weight: 100;
   color: hsl(210, 96%, 40%);
 }
-p a * em, .form-header .form-subheading a * em {
+p a * em, .form-header .form-subheading a * em, .page-not-found-page .main-wrapper span a * em {
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.32;
 }
 @media screen and (min-width: 600px) {
-  p a *, .form-header .form-subheading a * {
+  p a *, .form-header .form-subheading a *, .page-not-found-page .main-wrapper span a * {
     font-size: 9.28px;
   }
 }
 @media screen and (min-width: 768px) {
-  p a *, .form-header .form-subheading a * {
+  p a *, .form-header .form-subheading a *, .page-not-found-page .main-wrapper span a * {
     font-size: 10.7648px;
   }
 }
-p a:hover, .form-header .form-subheading a:hover {
+p a:hover, .form-header .form-subheading a:hover, .page-not-found-page .main-wrapper span a:hover {
   font-weight: 400;
   color: #0352a0;
 }
-p a:hover *, .form-header .form-subheading a:hover * {
+p a:hover *, .form-header .form-subheading a:hover *, .page-not-found-page .main-wrapper span a:hover * {
   color: #0352a0;
 }
 @media screen and (max-width: 379px) {
-  p, .form-header .form-subheading {
+  p, .form-header .form-subheading, .page-not-found-page .main-wrapper span {
     font-size: 10px;
   }
 }
@@ -2649,7 +2649,7 @@ input {
 input h2, input h3, input h4, input .form-header .form-heading, .form-header input .form-heading, input h5, input h6 {
   color: hsl(210, 100%, 4%);
 }
-input p, input .form-header .form-subheading, .form-header input .form-subheading, input span, input label, input input, input svg {
+input p, input .form-header .form-subheading, .form-header input .form-subheading, input .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper input span, input span, input label, input input, input svg {
   color: #001429;
 }
 input input::-moz-placeholder {
@@ -2738,7 +2738,7 @@ input:invalid {
   input h2, input h3, input h4, input .form-header .form-heading, .form-header input .form-heading, input h5, input h6 {
     color: hsl(210, 0%, 98%);
   }
-  input p, input .form-header .form-subheading, .form-header input .form-subheading, input span, input label, input input, input svg {
+  input p, input .form-header .form-subheading, .form-header input .form-subheading, input .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper input span, input span, input label, input input, input svg {
     color: #f0f0f0;
   }
   input input::-moz-placeholder {
@@ -2750,7 +2750,7 @@ input:invalid {
 }
 
 .ta-center, .form-text,
-.form-text > a, .form-progress .form-progress-details .form-progress-detail, .form-header .form-subheading {
+.form-text > a, .form-progress .form-progress-details .form-progress-detail, .form-header .form-subheading, .page-not-found-page .main-wrapper, .about-page .main-wrapper h4, .about-page .main-wrapper .form-header .form-heading, .form-header .about-page .main-wrapper .form-heading, .about-page .main-wrapper p, .about-page .page-not-found-page .main-wrapper span, .page-not-found-page .about-page .main-wrapper span, .about-page .main-wrapper h3, .home-page .main-wrapper {
   text-align: center;
 }
 
@@ -2825,7 +2825,7 @@ input:invalid {
 .App h2, .App h3, .App h4, .App .form-header .form-heading, .form-header .App .form-heading, .App h5, .App h6 {
   color: hsl(210, 100%, 4%);
 }
-.App p, .App .form-header .form-subheading, .form-header .App .form-subheading, .App span, .App label, .App input, .App svg {
+.App p, .App .form-header .form-subheading, .form-header .App .form-subheading, .App .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .App span, .App span, .App label, .App input, .App svg {
   color: #001429;
 }
 .App input::-moz-placeholder {
@@ -2842,7 +2842,7 @@ input:invalid {
   .App h2, .App h3, .App h4, .App .form-header .form-heading, .form-header .App .form-heading, .App h5, .App h6 {
     color: hsl(210, 0%, 98%);
   }
-  .App p, .App .form-header .form-subheading, .form-header .App .form-subheading, .App span, .App label, .App input, .App svg {
+  .App p, .App .form-header .form-subheading, .form-header .App .form-subheading, .App .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .App span, .App span, .App label, .App input, .App svg {
     color: #f0f0f0;
   }
   .App input::-moz-placeholder {
@@ -2860,7 +2860,7 @@ input:invalid {
 .home-page h2, .home-page h3, .home-page h4, .home-page .form-header .form-heading, .form-header .home-page .form-heading, .home-page h5, .home-page h6 {
   color: hsl(210, 100%, 4%);
 }
-.home-page p, .home-page .form-header .form-subheading, .form-header .home-page .form-subheading, .home-page span, .home-page label, .home-page input, .home-page svg {
+.home-page p, .home-page .form-header .form-subheading, .form-header .home-page .form-subheading, .home-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .home-page span, .home-page span, .home-page label, .home-page input, .home-page svg {
   color: #001429;
 }
 .home-page input::-moz-placeholder {
@@ -2877,13 +2877,86 @@ input:invalid {
   .home-page h2, .home-page h3, .home-page h4, .home-page .form-header .form-heading, .form-header .home-page .form-heading, .home-page h5, .home-page h6 {
     color: hsl(210, 0%, 98%);
   }
-  .home-page p, .home-page .form-header .form-subheading, .form-header .home-page .form-subheading, .home-page span, .home-page label, .home-page input, .home-page svg {
+  .home-page p, .home-page .form-header .form-subheading, .form-header .home-page .form-subheading, .home-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .home-page span, .home-page span, .home-page label, .home-page input, .home-page svg {
     color: #f0f0f0;
   }
   .home-page input::-moz-placeholder {
     color: rgba(255, 255, 255, 0.24);
   }
   .home-page input::placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+}
+
+.about-page {
+  background-color: #dbdbdb;
+  color: hsl(210, 100%, 4%);
+}
+.about-page h2, .about-page h3, .about-page h4, .about-page .form-header .form-heading, .form-header .about-page .form-heading, .about-page h5, .about-page h6 {
+  color: hsl(210, 100%, 4%);
+}
+.about-page p, .about-page .form-header .form-subheading, .form-header .about-page .form-subheading, .about-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .about-page span, .about-page span, .about-page label, .about-page input, .about-page svg {
+  color: #001429;
+}
+.about-page input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.about-page input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.about-page .main-wrapper h3 {
+  margin-bottom: -4px;
+}
+@media (prefers-color-scheme: dark) {
+  .about-page {
+    background-color: #000f1f;
+    color: hsl(210, 0%, 98%);
+  }
+  .about-page h2, .about-page h3, .about-page h4, .about-page .form-header .form-heading, .form-header .about-page .form-heading, .about-page h5, .about-page h6 {
+    color: hsl(210, 0%, 98%);
+  }
+  .about-page p, .about-page .form-header .form-subheading, .form-header .about-page .form-subheading, .about-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .about-page span, .about-page span, .about-page label, .about-page input, .about-page svg {
+    color: #f0f0f0;
+  }
+  .about-page input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+  .about-page input::placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+}
+
+.page-not-found-page {
+  background-color: #dbdbdb;
+  color: hsl(210, 100%, 4%);
+}
+.page-not-found-page h2, .page-not-found-page h3, .page-not-found-page h4, .page-not-found-page .form-header .form-heading, .form-header .page-not-found-page .form-heading, .page-not-found-page h5, .page-not-found-page h6 {
+  color: hsl(210, 100%, 4%);
+}
+.page-not-found-page p, .page-not-found-page .form-header .form-subheading, .form-header .page-not-found-page .form-subheading, .page-not-found-page .main-wrapper span, .page-not-found-page span, .page-not-found-page label, .page-not-found-page input, .page-not-found-page svg {
+  color: #001429;
+}
+.page-not-found-page input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.page-not-found-page input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+@media (prefers-color-scheme: dark) {
+  .page-not-found-page {
+    background-color: #000f1f;
+    color: hsl(210, 0%, 98%);
+  }
+  .page-not-found-page h2, .page-not-found-page h3, .page-not-found-page h4, .page-not-found-page .form-header .form-heading, .form-header .page-not-found-page .form-heading, .page-not-found-page h5, .page-not-found-page h6 {
+    color: hsl(210, 0%, 98%);
+  }
+  .page-not-found-page p, .page-not-found-page .form-header .form-subheading, .form-header .page-not-found-page .form-subheading, .page-not-found-page .main-wrapper span, .page-not-found-page span, .page-not-found-page label, .page-not-found-page input, .page-not-found-page svg {
+    color: #f0f0f0;
+  }
+  .page-not-found-page input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+  .page-not-found-page input::placeholder {
     color: rgba(255, 255, 255, 0.24);
   }
 }
@@ -8568,7 +8641,7 @@ input:invalid {
 .form-widget h2, .form-widget h3, .form-widget h4, .form-widget .form-header .form-heading, .form-header .form-widget .form-heading, .form-widget h5, .form-widget h6 {
   color: hsl(210, 100%, 4%);
 }
-.form-widget p, .form-widget .form-header .form-subheading, .form-header .form-widget .form-subheading, .form-widget span, .form-widget label, .form-widget input, .form-widget svg {
+.form-widget p, .form-widget .form-header .form-subheading, .form-header .form-widget .form-subheading, .form-widget .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .form-widget span, .form-widget span, .form-widget label, .form-widget input, .form-widget svg {
   color: #001429;
 }
 .form-widget input::-moz-placeholder {
@@ -8606,7 +8679,7 @@ input:invalid {
   .form-widget h2, .form-widget h3, .form-widget h4, .form-widget .form-header .form-heading, .form-header .form-widget .form-heading, .form-widget h5, .form-widget h6 {
     color: hsl(210, 0%, 98%);
   }
-  .form-widget p, .form-widget .form-header .form-subheading, .form-header .form-widget .form-subheading, .form-widget span, .form-widget label, .form-widget input, .form-widget svg {
+  .form-widget p, .form-widget .form-header .form-subheading, .form-header .form-widget .form-subheading, .form-widget .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .form-widget span, .form-widget span, .form-widget label, .form-widget input, .form-widget svg {
     color: #f0f0f0;
   }
   .form-widget input::-moz-placeholder {
@@ -9162,7 +9235,7 @@ input:invalid {
 .btn h2, .btn h3, .btn h4, .btn .form-header .form-heading, .form-header .btn .form-heading, .btn h5, .btn h6 {
   color: hsl(210, 0%, 98%);
 }
-.btn p, .btn .form-header .form-subheading, .form-header .btn .form-subheading, .btn span, .btn label, .btn input, .btn svg {
+.btn p, .btn .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .btn span, .btn .form-header .form-subheading, .form-header .btn .form-subheading, .btn span, .btn label, .btn input, .btn svg {
   color: #f0f0f0;
 }
 .btn input::-moz-placeholder {
@@ -9223,7 +9296,7 @@ input:invalid {
   .btn h2, .btn h3, .btn h4, .btn .form-header .form-heading, .form-header .btn .form-heading, .btn h5, .btn h6 {
     color: hsl(210, 0%, 98%);
   }
-  .btn p, .btn .form-header .form-subheading, .form-header .btn .form-subheading, .btn span, .btn label, .btn input, .btn svg {
+  .btn p, .btn .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .btn span, .btn .form-header .form-subheading, .form-header .btn .form-subheading, .btn span, .btn label, .btn input, .btn svg {
     color: #f0f0f0;
   }
   .btn input::-moz-placeholder {

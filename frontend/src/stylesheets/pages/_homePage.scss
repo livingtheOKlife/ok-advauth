@@ -2,6 +2,24 @@
 
   @include setBackgroundColor(darken($light, 12%));
 
+  .main-wrapper {
+
+    @extend .flex, .flex-col, .justify-center, .align-center, .gap-8, .h-100, .p-16, .ta-center;
+
+    p {
+
+      @extend .packet;
+
+    }
+
+    .buttons {
+
+      @extend .flex, .justify-center, .gap-16, .mt-32; 
+
+    }
+
+  }
+
   @media (prefers-color-scheme: dark) {
 
     @include setBackgroundColor(lighten($dark, 2%));
