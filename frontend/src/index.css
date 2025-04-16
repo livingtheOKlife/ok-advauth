@@ -1602,7 +1602,7 @@ input::-ms-clear {
   margin-right: 16px;
 }
 
-.mt-16 {
+.mt-16, #menu-container #menu-nav button {
   margin-top: 16px;
 }
 
@@ -1726,7 +1726,7 @@ input::-ms-clear {
   margin-top: 32px;
 }
 
-.mb-32 {
+.mb-32, #menu-container #menu-nav button {
   margin-bottom: 32px;
 }
 

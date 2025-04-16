@@ -83,7 +83,7 @@
 
     button {
 
-      @extend .piece, .flex, .justify-center, .align-center, .gap-8, .py-12, .br-8;
+      @extend .piece, .flex, .justify-center, .align-center, .gap-8, .py-12, .br-8, .mt-16, .mb-32;
       @include setMenuFont(16px);
       background-color: $light;
       opacity: 0;
