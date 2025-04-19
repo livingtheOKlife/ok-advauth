@@ -2,6 +2,9 @@ import asyncHandler from 'express-async-handler'
 
 import User from '../models/user.model.js'
 
+import generateToken from '../utils/generateToken.util.js'
+import sendVerificationEmail from '../utils/sendVerificationEmail.util.js'
+
 export const register = asyncHandler(async (req, res) => {
   const { username, email, password, firstName, lastName, dateOfBirth } =
     req.body
@@ -39,6 +42,8 @@ export const register = asyncHandler(async (req, res) => {
     verificationTokenExpiresAt: Date.now() + 24 * 60 * 60 * 1000,
   })
   if (user) {
+    generateToken(res, user._id)
+    sendVerificationEmail(user.email, verificationToken)
     res.status(201).json({
       success: true,
       message: 'User created successfully',
