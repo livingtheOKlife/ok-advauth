@@ -28,9 +28,9 @@ input {
 
   }
 
-  &:invalid {
+  &:invalid, &.invalid {
 
-    border-color: $red;
+    border: 1px solid $red-light;
     
   }
 

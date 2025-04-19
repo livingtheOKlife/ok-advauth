@@ -8,6 +8,12 @@
 
   }
 
+  .form-detail {
+  
+    @extend .flex, .align-center, .gap-8;
+  
+  }
+
   .btn {
 
     width: 90%;
@@ -23,18 +29,6 @@
     &:hover {
       
       font-weight: 600;
-
-    }
-
-  }
-
-  &:last-of-type {
-
-    @extend .justify-center;
-
-    .nav-link {
-
-      @extend .mt-8;
 
     }
 

@@ -3,6 +3,7 @@
   @extend .absolute, .flex, .align-center, .self-center, .gap-8;
   @include setBackgroundColor(darken($light, 4%));
   top: 32px;
+  max-width: 80%;
   padding: 12px 12px 20px 12px;
   border: 1px solid rgb(0, 0, 0, 0.08);
   box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px, rgba(0, 0, 0, 0.08) 0px 2px 4px;
@@ -12,6 +13,7 @@
   .alert-icon {
 
     font-size: 22px;
+    min-width: 22px;
 
   }
 

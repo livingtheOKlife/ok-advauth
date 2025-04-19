@@ -71,7 +71,7 @@ input::-ms-clear {
   margin: 0 auto;
 }
 
-.flex, .tags .tag, .tags, .input-btn, .btn, .menu-btn, .spinner .spinner-background, .form-control, .form-section, .form-divider, .form-progress .form-progress-details, .form-progress .form-progress-numbers, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper .buttons, .home-page .main-wrapper, .App {
+.flex, .tags .tag, .tags, .input-btn, .ghost-btn, .btn, .menu-btn, .spinner .spinner-background, .form-control, .form-section .form-detail, .form-section, .form-divider, .form-progress .form-progress-details, .form-progress .form-progress-numbers, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper .buttons, .home-page .main-wrapper, .App {
   display: flex;
 }
 
@@ -91,7 +91,7 @@ input::-ms-clear {
   display: inline-block;
 }
 
-.justify-center, .menu-btn, .spinner .spinner-background, .form-section:last-of-type, #alert-zeta .alert-btn, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper .buttons, .home-page .main-wrapper {
+.justify-center, .ghost-btn, .menu-btn, .spinner .spinner-background, #alert-zeta .alert-btn, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .register-page .main-wrapper .form-widget .form-window .form-divider .form-section:last-of-type, .home-page .main-wrapper .buttons, .home-page .main-wrapper {
   justify-content: center;
 }
 
@@ -107,7 +107,7 @@ input::-ms-clear {
   justify-content: end;
 }
 
-.align-center, .tags, .input-btn, .btn, .menu-btn, .spinner .spinner-background, .form-section, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #header-container #main-nav .main-nav-list, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper {
+.align-center, .tags, .input-btn, .ghost-btn, .btn, .menu-btn, .spinner .spinner-background, .form-section .form-detail, .form-section, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #header-container #main-nav .main-nav-list, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper {
   align-items: center;
 }
 
@@ -131,15 +131,15 @@ input::-ms-clear {
   gap: 3px;
 }
 
-.gap-4, .btn.sm, .form-control, #footer-container #footer-wrapper #brand, #header-container #main-nav .main-nav-list, .page-not-found-page .main-wrapper {
+.gap-4, .ghost-btn.sm, .btn.sm, .form-control, #footer-container #footer-wrapper #brand, #header-container #main-nav .main-nav-list, .page-not-found-page .main-wrapper {
   gap: 4px;
 }
 
-.gap-6, .btn.md {
+.gap-6, .ghost-btn.md, .btn.md {
   gap: 6px;
 }
 
-.gap-8, .btn.lg, #alert-zeta, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper {
+.gap-8, .ghost-btn.lg, .btn.lg, .form-section .form-detail, #alert-zeta, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper {
   gap: 8px;
 }
 
@@ -764,7 +764,7 @@ input::-ms-clear {
   padding-right: 8px;
 }
 
-.py-8, .btn.sm, .form-window {
+.py-8, .ghost-btn.sm, .btn.sm, .form-window {
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -824,7 +824,7 @@ input::-ms-clear {
   padding-right: 12px;
 }
 
-.py-12, .btn.md, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, input {
+.py-12, .ghost-btn.md, .btn.md, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, input {
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -849,12 +849,12 @@ input::-ms-clear {
   padding-bottom: 16px;
 }
 
-.px-16, .input-btn, .btn.md, .btn.sm, input {
+.px-16, .input-btn, .ghost-btn.md, .ghost-btn.sm, .btn.md, .btn.sm, input {
   padding-left: 16px;
   padding-right: 16px;
 }
 
-.py-16, .btn.lg {
+.py-16, .ghost-btn.lg, .btn.lg {
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -909,7 +909,7 @@ input::-ms-clear {
   padding-bottom: 24px;
 }
 
-.px-24, .btn.lg, .form-widget {
+.px-24, .ghost-btn.lg, .btn.lg, .form-widget {
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -961,7 +961,7 @@ input::-ms-clear {
   padding-right: 32px;
 }
 
-.pt-32 {
+.pt-32, .form-widget {
   padding-top: 32px;
 }
 
@@ -974,7 +974,7 @@ input::-ms-clear {
   padding-right: 32px;
 }
 
-.py-32, .form-widget {
+.py-32 {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -1025,7 +1025,7 @@ input::-ms-clear {
   padding-top: 48px;
 }
 
-.pb-48 {
+.pb-48, .form-widget {
   padding-bottom: 48px;
 }
 
@@ -1273,11 +1273,11 @@ input::-ms-clear {
   border-radius: 4px;
 }
 
-.br-6, .btn.sm, input {
+.br-6, .ghost-btn.sm, .btn.sm, input {
   border-radius: 6px;
 }
 
-.br-8, .btn.md, .form-widget, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item {
+.br-8, .ghost-btn.md, .btn.md, .form-widget, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item {
   border-radius: 8px;
 }
 
@@ -1285,7 +1285,7 @@ input::-ms-clear {
   border-radius: 10px;
 }
 
-.br-12, .btn.lg {
+.br-12, .ghost-btn.lg, .btn.lg {
   border-radius: 12px;
 }
 
@@ -1345,7 +1345,7 @@ input::-ms-clear {
   border-radius: 256px;
 }
 
-.mx-auto, .spinner {
+.mx-auto, .ghost-btn, .spinner {
   margin-left: auto;
   margin-right: auto;
 }
@@ -1388,7 +1388,7 @@ input::-ms-clear {
   margin-left: 2px;
 }
 
-.mr-2, #header-container #main-nav .menu-btn {
+.mr-2, #header-container #main-nav a .logo em, #header-container #main-nav .menu-btn {
   margin-right: 2px;
 }
 
@@ -1512,7 +1512,7 @@ input::-ms-clear {
   margin-right: 8px;
 }
 
-.mt-8, .form-section:last-of-type .nav-link {
+.mt-8 {
   margin-top: 8px;
 }
 
@@ -1594,7 +1594,7 @@ input::-ms-clear {
   margin: 16px;
 }
 
-.ml-16, .form-control .input-text {
+.ml-16 {
   margin-left: 16px;
 }
 
@@ -1610,7 +1610,7 @@ input::-ms-clear {
   margin-bottom: 16px;
 }
 
-.mx-16 {
+.mx-16, .form-control .input-text {
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -1722,7 +1722,7 @@ input::-ms-clear {
   margin-right: 32px;
 }
 
-.mt-32, .about-page .main-wrapper .about, .home-page .main-wrapper .buttons {
+.mt-32, .about-page .main-wrapper .about, .register-page .main-wrapper .form-widget .form-window .form-divider .form-section:last-of-type .btn, .home-page .main-wrapper .buttons {
   margin-top: 32px;
 }
 
@@ -2726,8 +2726,8 @@ input:active, input:focus, input:focus-visible {
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-input:invalid {
-  border-color: hsl(0, 64%, 55%);
+input:invalid, input.invalid {
+  border: 1px solid #e89696;
 }
 @media (prefers-color-scheme: dark) {
   input {
@@ -2884,6 +2884,41 @@ input:invalid {
     color: rgba(255, 255, 255, 0.24);
   }
   .home-page input::placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+}
+
+.register-page {
+  background-color: #dbdbdb;
+  color: hsl(210, 100%, 4%);
+}
+.register-page h2, .register-page h3, .register-page h4, .register-page .form-header .form-heading, .form-header .register-page .form-heading, .register-page h5, .register-page h6 {
+  color: hsl(210, 100%, 4%);
+}
+.register-page p, .register-page .form-header .form-subheading, .form-header .register-page .form-subheading, .register-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .register-page span, .register-page span, .register-page label, .register-page input, .register-page svg {
+  color: #001429;
+}
+.register-page input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.register-page input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+@media (prefers-color-scheme: dark) {
+  .register-page {
+    background-color: #000f1f;
+    color: hsl(210, 0%, 98%);
+  }
+  .register-page h2, .register-page h3, .register-page h4, .register-page .form-header .form-heading, .form-header .register-page .form-heading, .register-page h5, .register-page h6 {
+    color: hsl(210, 0%, 98%);
+  }
+  .register-page p, .register-page .form-header .form-subheading, .form-header .register-page .form-subheading, .register-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .register-page span, .register-page span, .register-page label, .register-page input, .register-page svg {
+    color: #f0f0f0;
+  }
+  .register-page input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+  .register-page input::placeholder {
     color: rgba(255, 255, 255, 0.24);
   }
 }
@@ -8439,6 +8474,7 @@ input:invalid {
   background-color: #f0f0f0;
   color: hsl(210, 100%, 4%);
   top: 32px;
+  max-width: 80%;
   padding: 12px 12px 20px 12px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px, rgba(0, 0, 0, 0.08) 0px 2px 4px;
@@ -8459,6 +8495,7 @@ input:invalid {
 }
 #alert-zeta .alert-icon {
   font-size: 22px;
+  min-width: 22px;
 }
 #alert-zeta .alert-text {
   font-family: "Poppins", sans-serif;
@@ -8694,105 +8731,29 @@ input:invalid {
   width: 200px;
 }
 .form-progress .form-progress-numbers {
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.32;
+  font-weight: 600;
   top: -12px;
   left: -1px;
   width: calc(100% + 4px);
 }
 .form-progress .form-progress-numbers em {
-  letter-spacing: 0;
-  color: hsl(210, 96%, 40%);
-}
-.form-progress .form-progress-numbers .logo {
-  font-family: "Rock Salt", cursive;
-  font-size: 7.7586206897px;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 1;
-}
-.form-progress .form-progress-numbers .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: hsl(210, 96%, 40%);
-}
-@media (prefers-color-scheme: dark) {
-  .form-progress .form-progress-numbers .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
-@media screen and (max-width: 379px) {
-  .form-progress .form-progress-numbers {
-    font-size: 7.7586206897px;
-  }
-  .form-progress .form-progress-numbers .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 6.8181818182px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 1;
-  }
-  .form-progress .form-progress-numbers .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: hsl(210, 96%, 40%);
-  }
-}
-@media screen and (max-width: 379px) and (prefers-color-scheme: dark) {
-  .form-progress .form-progress-numbers .logo em {
-    color: hsl(32, 96%, 48%);
-  }
+  line-height: 1.32;
 }
 @media screen and (min-width: 600px) {
   .form-progress .form-progress-numbers {
     font-size: 10.44px;
   }
-  .form-progress .form-progress-numbers .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 9px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 1;
-  }
-  .form-progress .form-progress-numbers .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: hsl(210, 96%, 40%);
-  }
-}
-@media screen and (min-width: 600px) and (prefers-color-scheme: dark) {
-  .form-progress .form-progress-numbers .logo em {
-    color: hsl(32, 96%, 48%);
-  }
 }
 @media screen and (min-width: 768px) {
   .form-progress .form-progress-numbers {
     font-size: 12.1104px;
-  }
-  .form-progress .form-progress-numbers .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 10.44px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 1;
-  }
-  .form-progress .form-progress-numbers .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: hsl(210, 96%, 40%);
-  }
-}
-@media screen and (min-width: 768px) and (prefers-color-scheme: dark) {
-  .form-progress .form-progress-numbers .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .form-progress .form-progress-numbers em {
-    color: hsl(32, 96%, 48%);
   }
 }
 .form-progress .form-progress-numbers .form-progress-number {
@@ -8857,103 +8818,27 @@ input:invalid {
   }
 }
 .form-progress .form-progress-details {
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0;
-  line-height: 1;
+  line-height: 1.32;
+  font-weight: 600;
   top: 16px;
 }
 .form-progress .form-progress-details em {
-  letter-spacing: 0;
-  color: hsl(210, 96%, 40%);
-}
-.form-progress .form-progress-details .logo {
-  font-family: "Rock Salt", cursive;
-  font-size: 7.7586206897px;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 1;
-}
-.form-progress .form-progress-details .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: hsl(210, 96%, 40%);
-}
-@media (prefers-color-scheme: dark) {
-  .form-progress .form-progress-details .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
-@media screen and (max-width: 379px) {
-  .form-progress .form-progress-details {
-    font-size: 7.7586206897px;
-  }
-  .form-progress .form-progress-details .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 6.8181818182px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 1;
-  }
-  .form-progress .form-progress-details .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: hsl(210, 96%, 40%);
-  }
-}
-@media screen and (max-width: 379px) and (prefers-color-scheme: dark) {
-  .form-progress .form-progress-details .logo em {
-    color: hsl(32, 96%, 48%);
-  }
+  line-height: 1.32;
 }
 @media screen and (min-width: 600px) {
   .form-progress .form-progress-details {
     font-size: 10.44px;
   }
-  .form-progress .form-progress-details .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 9px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 1;
-  }
-  .form-progress .form-progress-details .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: hsl(210, 96%, 40%);
-  }
-}
-@media screen and (min-width: 600px) and (prefers-color-scheme: dark) {
-  .form-progress .form-progress-details .logo em {
-    color: hsl(32, 96%, 48%);
-  }
 }
 @media screen and (min-width: 768px) {
   .form-progress .form-progress-details {
     font-size: 12.1104px;
-  }
-  .form-progress .form-progress-details .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 10.44px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 1;
-  }
-  .form-progress .form-progress-details .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: hsl(210, 96%, 40%);
-  }
-}
-@media screen and (min-width: 768px) and (prefers-color-scheme: dark) {
-  .form-progress .form-progress-details .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .form-progress .form-progress-details em {
-    color: hsl(32, 96%, 48%);
   }
 }
 .form-progress .form-progress-details .form-progress-detail {
@@ -8989,6 +8874,7 @@ input:invalid {
 .form-section .btn:hover {
   font-weight: 600;
 }
+
 .form-control .icon-input .input-icon {
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
@@ -9015,11 +8901,11 @@ input:invalid {
 }
 .form-control .input-text {
   font-family: "Quicksand", sans-serif;
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.32;
-  margin-top: -2px;
+  line-height: 1.16;
   color: hsl(0, 64%, 55%);
 }
 .form-control .input-text em {
@@ -9029,12 +8915,12 @@ input:invalid {
 }
 @media screen and (min-width: 600px) {
   .form-control .input-text {
-    font-size: 10.44px;
+    font-size: 9.28px;
   }
 }
 @media screen and (min-width: 768px) {
   .form-control .input-text {
-    font-size: 12.1104px;
+    font-size: 10.7648px;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -9310,6 +9196,90 @@ input:invalid {
   background-color: rgba(0, 0, 0, 0.32);
 }
 
+.ghost-btn {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.16px;
+  line-height: 1;
+  transition: all 0.08s ease-in-out;
+  background-color: hsl(210, 0%, 98%);
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.72);
+  cursor: pointer;
+}
+.ghost-btn:hover {
+  font-weight: 600;
+}
+.ghost-btn * {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.16px;
+  line-height: 1;
+  transition: all 0.08s ease-in-out;
+  transition: all 0.08s ease-in-out;
+}
+.ghost-btn *:hover {
+  font-weight: 600;
+}
+.ghost-btn.sm svg {
+  font-size: 14px;
+}
+.ghost-btn.md {
+  font-size: 14px;
+}
+.ghost-btn.md svg {
+  font-size: 16px;
+}
+@media screen and (max-width: 379px) {
+  .ghost-btn.md {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+  .ghost-btn.md svg {
+    font-size: 14px;
+  }
+}
+.ghost-btn.lg {
+  font-size: 16px;
+}
+.ghost-btn.lg svg {
+  font-size: 20px;
+}
+@media screen and (max-width: 379px) {
+  .ghost-btn.lg {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  .ghost-btn.lg svg {
+    font-size: 18px;
+  }
+}
+.ghost-btn:hover {
+  background-color: hsl(210, 96%, 40%);
+  color: hsl(210, 0%, 98%);
+}
+.ghost-btn:hover * {
+  color: hsl(210, 0%, 98%);
+}
+@media (prefers-color-scheme: dark) {
+  .ghost-btn {
+    background-color: hsl(210, 100%, 4%);
+    color: hsl(210, 0%, 98%);
+  }
+  .ghost-btn svg {
+    color: rgba(255, 255, 255, 0.72);
+  }
+  .ghost-btn:hover {
+    background-color: hsl(32, 96%, 48%);
+  }
+}
+
 .input-btn {
   bottom: 0;
   right: 0;
@@ -9379,4 +9349,18 @@ input:invalid {
 }
 .tags .tag.php svg {
   color: #B0B3D6;
+}
+
+#header-container #main-nav a .logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 1;
+}
+#header-container #main-nav a .logo em {
+  font-family: "Rock Salt", cursive;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
 }/*# sourceMappingURL=index.css.map */

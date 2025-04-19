@@ -1,6 +1,6 @@
 .form-widget {
 
-  @extend .widget, .flex, .flex-col, .align-center, .gap-16, .px-24, .py-32, .br-8;
+  @extend .widget, .flex, .flex-col, .align-center, .gap-16, .px-24, .pt-32, .pb-48, .br-8;
   @include setBackgroundColor($light);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px, rgba(0, 0, 0, 0.16) 0px 2px 8px;
   

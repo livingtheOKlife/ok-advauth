@@ -19,9 +19,9 @@
 
   .input-text {
 
-    @extend .ml-16;
-    @include setBodyFont(9px);
-    margin-top: -2px;
+    @extend .mx-16;
+    @include setBodyFont(8px);
+    line-height: 1.16;
     color: $red;
     
     @media (prefers-color-scheme: dark) {

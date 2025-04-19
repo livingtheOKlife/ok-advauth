@@ -6,7 +6,8 @@
   .form-progress-numbers {
 
     @extend .absolute, .flex, .justify-between;
-    @include setHeadingFont(9px);
+    @include setBodyFont(9px);
+    font-weight: 600;
     top: -12px;
     left: -1px;
     width: calc(100% + 4px);
@@ -99,7 +100,8 @@
   .form-progress-details {
 
     @extend .absolute, .flex, .justify-between, .w-100;
-    @include setHeadingFont(9px);
+    @include setBodyFont(9px);
+    font-weight: 600;
     top: 16px;
 
     .form-progress-detail {
