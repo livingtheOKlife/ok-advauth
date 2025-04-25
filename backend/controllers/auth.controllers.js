@@ -1,10 +1,14 @@
 import asyncHandler from 'express-async-handler'
+import crypto from 'crypto'
 
 import User from '../models/user.model.js'
 
 import generateToken from '../utils/generateToken.util.js'
 import sendVerificationEmail from '../utils/sendVerificationEmail.util.js'
 import sendWelcomeEmail from '../utils/sendWelcomeEmail.util.js'
+import sendForgotPasswordEmail from '../utils/sendForgotPasswordEmail.util.js'
+
+const CLIENT_URL = process.env.CLIENT_URL
 
 export const register = asyncHandler(async (req, res) => {
   const { username, email, password, firstName, lastName, dateOfBirth } =
@@ -108,5 +112,28 @@ export const login = asyncHandler(async (req, res) => {
   } else {
     res.status(401)
     throw new Error('Invalid email or password')
+  }
+})
+
+export const forgotPassword = asyncHandler(async (req, res) => {
+  const { email } = req.body
+  const user = await User.findOne({ email })
+  if (user) {
+    const resetToken = crypto.randomBytes(20).toString('hex')
+    const resetTokenExpiresAt = Date.now() + 1 * 60 * 60 * 1000
+    user.resetPasswordToken = resetToken
+    user.resetPasswordExpiresAt = resetTokenExpiresAt
+    await user.save()
+    // sendForgotPasswordEmail(
+    //   user.email,
+    //   `${CLIENT_URL}/reset-password/${resetToken}`
+    // )
+    res.status(200).json({
+      success: true,
+      message: 'Password reset link sent to your email',
+    })
+  } else {
+    res.status(401)
+    throw new Error('User not found, try signing up...')
   }
 })

@@ -129,7 +129,7 @@ function RegisterPage () {
                     minLength: { value: 2, message: 'Username must be at least 2 characters' },
                     maxLength: { value: 16, message: 'Username must be no more than 16 characters' },
                     pattern: {
-                      value: /^(?=[\w.-])(?:[\d_.-]*[a-zA-Z]){3}[\w.-]*$/,
+                      value: /^(?=[\w.-])(?:[\d_.-]*[a-zA-Z])[\w.-]*$/,
                       message: "Usernames can only contain letters, numbers, and _ . -",
                     },
                   })

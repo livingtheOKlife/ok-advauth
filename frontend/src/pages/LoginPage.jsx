@@ -93,6 +93,7 @@ function LoginPage () {
             errors.password && <span className="input-text">{errors.password.message}</span>
           }
         </FormControl>
+        <div className="form-text"><Link to='/forgot-password'>Forgot password</Link></div>
         {
           !isLoading ? 
             <button type="submit" className='btn md'>

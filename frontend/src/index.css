@@ -2958,6 +2958,41 @@ input::placeholder em {
   }
 }
 
+.forgot-password-page {
+  background-color: #dbdbdb;
+  color: hsl(210, 100%, 4%);
+}
+.forgot-password-page h2, .forgot-password-page h3, .forgot-password-page h4, .forgot-password-page .form-header .form-heading, .form-header .forgot-password-page .form-heading, .forgot-password-page h5, .forgot-password-page h6 {
+  color: hsl(210, 100%, 4%);
+}
+.forgot-password-page p, .forgot-password-page .form-header .form-subheading, .form-header .forgot-password-page .form-subheading, .forgot-password-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .forgot-password-page span, .forgot-password-page span, .forgot-password-page label, .forgot-password-page input, .forgot-password-page svg {
+  color: #001429;
+}
+.forgot-password-page input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.forgot-password-page input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+@media (prefers-color-scheme: dark) {
+  .forgot-password-page {
+    background-color: #000f1f;
+    color: hsl(210, 0%, 98%);
+  }
+  .forgot-password-page h2, .forgot-password-page h3, .forgot-password-page h4, .forgot-password-page .form-header .form-heading, .form-header .forgot-password-page .form-heading, .forgot-password-page h5, .forgot-password-page h6 {
+    color: hsl(210, 0%, 98%);
+  }
+  .forgot-password-page p, .forgot-password-page .form-header .form-subheading, .form-header .forgot-password-page .form-subheading, .forgot-password-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .forgot-password-page span, .forgot-password-page span, .forgot-password-page label, .forgot-password-page input, .forgot-password-page svg {
+    color: #f0f0f0;
+  }
+  .forgot-password-page input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+  .forgot-password-page input::placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+}
+
 .about-page {
   background-color: #dbdbdb;
   color: hsl(210, 100%, 4%);
