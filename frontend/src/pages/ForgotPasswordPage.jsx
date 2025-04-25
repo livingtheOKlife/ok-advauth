@@ -66,7 +66,7 @@ function ForgotPasswordPage() {
             <button type="submit" className='btn md'>Send help</button>
           : <Spinner />
         }
-        <div className="form-text">Remember your password? <Link to='/register'>Sign in</Link></div>
+        <div className="form-text">Remember your password? <Link to='/login'>Sign in</Link></div>
         <div className="form-text">or...</div>
         <div className="form-text">Not a member? <Link to='/register'>Sign up instead</Link></div>
       </FormWidget>

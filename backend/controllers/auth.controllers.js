@@ -49,7 +49,7 @@ export const register = asyncHandler(async (req, res) => {
   })
   if (user) {
     generateToken(res, user._id)
-    // sendVerificationEmail(user.email, verificationToken)
+    sendVerificationEmail(user.email, verificationToken)
     res.status(201).json({
       success: true,
       message: 'User created successfully',
@@ -77,7 +77,7 @@ export const verifyEmail = asyncHandler(async (req, res) => {
     user.verificationToken = undefined
     user.verificationTokenExpiresAt = undefined
     await user.save()
-    // await sendWelcomeEmail(user.email, user.fullName)
+    await sendWelcomeEmail(user.email, user.fullName)
     res.status(200).json({
       success: true,
       message: 'Email successfully verified',
@@ -125,10 +125,10 @@ export const forgotPassword = asyncHandler(async (req, res) => {
     user.resetPasswordToken = resetToken
     user.resetPasswordExpiresAt = resetTokenExpiresAt
     await user.save()
-    // sendForgotPasswordEmail(
-    //   user.email,
-    //   `${CLIENT_URL}/reset-password/${resetToken}`
-    // )
+    sendForgotPasswordEmail(
+      user.email,
+      `${CLIENT_URL}/reset-password/${resetToken}`
+    )
     res.status(200).json({
       success: true,
       message: 'Password reset link sent to your email',
@@ -150,7 +150,7 @@ export const resetPassword = asyncHandler(async (req, res) => {
     user.resetPasswordExpiresAt = undefined
     await user.save()
     generateToken(res, user._id)
-    // sendPasswordResetEmail(user.email)
+    sendPasswordResetEmail(user.email)
     res.status(200).json({
       success: true,
       message: 'Password updated successfully',

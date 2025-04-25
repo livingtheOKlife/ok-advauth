@@ -31,7 +31,7 @@ input {
 
   &[type=number] {
     
-    @extend .py-20, .ta-center;
+    @extend .px-2, .py-20, .ta-center;
     @include setBodyFont(18px);
     caret-color: transparent;
     -moz-appearance: textfield;

@@ -35,11 +35,11 @@ input::-ms-clear {
   animation: none !important;
 }
 
-.relative, .menu-btn .bar, .menu-btn, .spinner .spinner-background, .form-control .icon-input, .form-progress, .App {
+.relative, .menu-btn .bar, .menu-btn, .spinner .spinner-background, .form-control .icon-input, .form-progress, .profile-page .profile-section:first-of-type .profile-heading, .profile-page .profile-section:first-of-type, .App {
   position: relative;
 }
 
-.absolute, .input-btn, .spinner .spinner-background .spinner-ball, .form-control .icon-input .input-icon, .form-progress .form-progress-details, .form-progress .form-progress-ball, .form-progress .form-progress-bar, .form-progress .form-progress-numbers, #alert-zeta .alert-progress-bg, #alert-zeta, #menu-container {
+.absolute, .input-btn, .spinner .spinner-background .spinner-ball, .form-control .icon-input .input-icon, .form-progress .form-progress-details, .form-progress .form-progress-ball, .form-progress .form-progress-bar, .form-progress .form-progress-numbers, #alert-zeta .alert-progress-bg, #alert-zeta, #menu-container, .profile-page .profile-section:first-of-type .profile-subheading {
   position: absolute;
 }
 
@@ -53,7 +53,7 @@ input::-ms-clear {
   margin: 0 auto;
 }
 
-.widget, .form-widget {
+.widget, .card, .form-widget {
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
@@ -71,11 +71,11 @@ input::-ms-clear {
   margin: 0 auto;
 }
 
-.flex, .tags .tag, .tags, .input-btn, .ghost-btn, .btn, .menu-btn, .spinner .spinner-background, .form-control .code-input, .form-control, .form-section .form-detail, .form-section, .form-divider, .form-progress .form-progress-details, .form-progress .form-progress-numbers, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper .buttons, .home-page .main-wrapper, .App {
+.flex, .tags .tag, .tags, .input-btn, .ghost-btn, .btn, .menu-btn, .card, .form-widget, .spinner .spinner-background, .form-control .code-input, .form-control, .form-section .form-detail, .form-section, .form-divider, .form-progress .form-progress-details, .form-progress .form-progress-numbers, .form-header, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .profile-page dl li dt, .profile-page dl li dd, .profile-page dl li, .profile-page dl, .home-page .main-wrapper .buttons, .home-page .main-wrapper, .App {
   display: flex;
 }
 
-.flex-col, .menu-btn, .form-control, .form-section, .form-header, .form-widget, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper, .App {
+.flex-col, .menu-btn, .card, .form-widget, .form-control, .form-section, .form-header, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .profile-page dl, .home-page .main-wrapper, .App {
   flex-direction: column;
 }
 
@@ -107,7 +107,7 @@ input::-ms-clear {
   justify-content: end;
 }
 
-.align-center, .tags, .input-btn, .ghost-btn, .btn, .menu-btn, .spinner .spinner-background, .form-control .code-input, .form-section .form-detail, .form-section, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #header-container #main-nav .main-nav-list, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper {
+.align-center, .tags, .input-btn, .ghost-btn, .btn, .menu-btn, .card, .form-widget, .spinner .spinner-background, .form-control .code-input, .form-section .form-detail, .form-section, .form-header, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #header-container #main-nav .main-nav-list, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .profile-page dl li dt, .profile-page dl li dd, .profile-page dl li, .profile-page dl, .home-page .main-wrapper {
   align-items: center;
 }
 
@@ -131,7 +131,7 @@ input::-ms-clear {
   gap: 3px;
 }
 
-.gap-4, .ghost-btn.sm, .btn.sm, .form-control, #footer-container #footer-wrapper #brand, #header-container #main-nav .main-nav-list, .page-not-found-page .main-wrapper {
+.gap-4, .ghost-btn.sm, .btn.sm, .form-control, #footer-container #footer-wrapper #brand, #header-container #main-nav .main-nav-list, .page-not-found-page .main-wrapper, .profile-page dl li dt, .profile-page dl li dd {
   gap: 4px;
 }
 
@@ -139,7 +139,7 @@ input::-ms-clear {
   gap: 6px;
 }
 
-.gap-8, .ghost-btn.lg, .btn.lg, .form-section .form-detail, #alert-zeta, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper {
+.gap-8, .ghost-btn.lg, .btn.lg, .form-section .form-detail, #alert-zeta, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .profile-page dl li, .home-page .main-wrapper {
   gap: 8px;
 }
 
@@ -151,7 +151,7 @@ input::-ms-clear {
   gap: 12px;
 }
 
-.gap-16, .tags, .form-section, .form-widget, .home-page .main-wrapper .buttons {
+.gap-16, .tags, .card, .form-widget, .form-section, .profile-page dl, .home-page .main-wrapper .buttons {
   gap: 16px;
 }
 
@@ -639,7 +639,7 @@ input::-ms-clear {
   padding-bottom: 2px;
 }
 
-.px-2 {
+.px-2, input[type=number] {
   padding-left: 2px;
   padding-right: 2px;
 }
@@ -909,7 +909,7 @@ input::-ms-clear {
   padding-bottom: 24px;
 }
 
-.px-24, .ghost-btn.lg, .btn.lg, .form-widget {
+.px-24, .ghost-btn.lg, .btn.lg, .card, .form-widget {
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -961,7 +961,7 @@ input::-ms-clear {
   padding-right: 32px;
 }
 
-.pt-32, .form-widget {
+.pt-32, .card, .form-widget {
   padding-top: 32px;
 }
 
@@ -1025,7 +1025,7 @@ input::-ms-clear {
   padding-top: 48px;
 }
 
-.pb-48, .form-widget {
+.pb-48, .card, .form-widget {
   padding-bottom: 48px;
 }
 
@@ -1277,7 +1277,7 @@ input::-ms-clear {
   border-radius: 6px;
 }
 
-.br-8, .ghost-btn.md, .btn.md, .form-widget, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item {
+.br-8, .ghost-btn.md, .btn.md, .card, .form-widget, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item {
   border-radius: 8px;
 }
 
@@ -1722,11 +1722,11 @@ input::-ms-clear {
   margin-right: 32px;
 }
 
-.mt-32, .about-page .main-wrapper .about, .register-page .main-wrapper .form-widget .form-window .form-divider .form-section:last-of-type .btn, .home-page .main-wrapper .buttons {
+.mt-32, .about-page .main-wrapper .about, .register-page .main-wrapper .form-widget .form-window .form-divider .form-section:last-of-type .btn, .profile-page .nav-link, .home-page .main-wrapper .buttons {
   margin-top: 32px;
 }
 
-.mb-32, #menu-container #menu-nav button, .page-not-found-page .main-wrapper span {
+.mb-32, #menu-container #menu-nav button, .page-not-found-page .main-wrapper span, .profile-page .profile-section:first-of-type {
   margin-bottom: 32px;
 }
 
@@ -2846,6 +2846,198 @@ input::placeholder em {
     color: rgba(255, 255, 255, 0.24);
   }
   .home-page input::placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+}
+
+.profile-page {
+  background-color: #dbdbdb;
+  color: hsl(210, 100%, 4%);
+}
+.profile-page h2, .profile-page h3, .profile-page h4, .profile-page .form-header .form-heading, .form-header .profile-page .form-heading, .profile-page h5, .profile-page h6 {
+  color: hsl(210, 100%, 4%);
+}
+.profile-page p, .profile-page .form-header .form-subheading, .form-header .profile-page .form-subheading, .profile-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .profile-page span, .profile-page span, .profile-page label, .profile-page input, .profile-page svg {
+  color: #001429;
+}
+.profile-page input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.profile-page input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.profile-page .profile-section:first-of-type {
+  font-family: "Poppins", sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+}
+.profile-page .profile-section:first-of-type em {
+  letter-spacing: 0;
+  color: hsl(210, 96%, 40%);
+}
+.profile-page .profile-section:first-of-type .logo {
+  font-family: "Rock Salt", cursive;
+  font-size: 6.8965517241px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
+}
+.profile-page .profile-section:first-of-type .logo em {
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: hsl(210, 96%, 40%);
+}
+@media (prefers-color-scheme: dark) {
+  .profile-page .profile-section:first-of-type .logo em {
+    color: hsl(32, 96%, 48%);
+  }
+}
+@media screen and (max-width: 379px) {
+  .profile-page .profile-section:first-of-type {
+    font-size: 6.8965517241px;
+  }
+  .profile-page .profile-section:first-of-type .logo {
+    font-family: "Rock Salt", cursive;
+    font-size: 6.0606060606px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+  .profile-page .profile-section:first-of-type .logo em {
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: hsl(210, 96%, 40%);
+  }
+}
+@media screen and (max-width: 379px) and (prefers-color-scheme: dark) {
+  .profile-page .profile-section:first-of-type .logo em {
+    color: hsl(32, 96%, 48%);
+  }
+}
+@media screen and (min-width: 600px) {
+  .profile-page .profile-section:first-of-type {
+    font-size: 9.28px;
+  }
+  .profile-page .profile-section:first-of-type .logo {
+    font-family: "Rock Salt", cursive;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+  .profile-page .profile-section:first-of-type .logo em {
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: hsl(210, 96%, 40%);
+  }
+}
+@media screen and (min-width: 600px) and (prefers-color-scheme: dark) {
+  .profile-page .profile-section:first-of-type .logo em {
+    color: hsl(32, 96%, 48%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile-page .profile-section:first-of-type {
+    font-size: 10.7648px;
+  }
+  .profile-page .profile-section:first-of-type .logo {
+    font-family: "Rock Salt", cursive;
+    font-size: 9.28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+  .profile-page .profile-section:first-of-type .logo em {
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: hsl(210, 96%, 40%);
+  }
+}
+@media screen and (min-width: 768px) and (prefers-color-scheme: dark) {
+  .profile-page .profile-section:first-of-type .logo em {
+    color: hsl(32, 96%, 48%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .profile-page .profile-section:first-of-type em {
+    color: hsl(32, 96%, 48%);
+  }
+}
+.profile-page .profile-section:first-of-type .profile-heading {
+  margin-bottom: -4px;
+}
+.profile-page .profile-section:first-of-type .profile-subheading {
+  right: 20px;
+  font-weight: 300;
+}
+.profile-page .profile-section:first-of-type .profile-subheading em {
+  font-family: "Rock Salt", cursive;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
+}
+.profile-page .profile-section:first-of-type .profile-subheading em em {
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: hsl(210, 96%, 40%);
+}
+@media (prefers-color-scheme: dark) {
+  .profile-page .profile-section:first-of-type .profile-subheading em em {
+    color: hsl(32, 96%, 48%);
+  }
+}
+.profile-page dl li dt, .profile-page dl li dd {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.32;
+}
+.profile-page dl li dt em, .profile-page dl li dd em {
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.32;
+}
+@media screen and (min-width: 600px) {
+  .profile-page dl li dt, .profile-page dl li dd {
+    font-size: 16.24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile-page dl li dt, .profile-page dl li dd {
+    font-size: 18.8384px;
+  }
+}
+.profile-page dl li dt svg, .profile-page dl li dd svg {
+  font-size: 14px;
+}
+.profile-page dl li dt svg.red, .profile-page dl li dd svg.red {
+  color: hsl(0, 64%, 55%);
+}
+.profile-page dl li dt svg.green, .profile-page dl li dd svg.green {
+  color: hsl(92, 55%, 43%);
+}
+.profile-page dl li dt {
+  font-weight: 600;
+}
+@media (prefers-color-scheme: dark) {
+  .profile-page {
+    background-color: #000f1f;
+    color: hsl(210, 0%, 98%);
+  }
+  .profile-page h2, .profile-page h3, .profile-page h4, .profile-page .form-header .form-heading, .form-header .profile-page .form-heading, .profile-page h5, .profile-page h6 {
+    color: hsl(210, 0%, 98%);
+  }
+  .profile-page p, .profile-page .form-header .form-subheading, .form-header .profile-page .form-subheading, .profile-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .profile-page span, .profile-page span, .profile-page label, .profile-page input, .profile-page svg {
+    color: #f0f0f0;
+  }
+  .profile-page input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+  .profile-page input::placeholder {
     color: rgba(255, 255, 255, 0.24);
   }
 }
@@ -8775,23 +8967,6 @@ input::placeholder em {
   }
 }
 
-.form-widget {
-  background-color: hsl(210, 0%, 98%);
-  color: hsl(210, 100%, 4%);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px, rgba(0, 0, 0, 0.16) 0px 2px 8px;
-}
-.form-widget h2, .form-widget h3, .form-widget h4, .form-widget .form-header .form-heading, .form-header .form-widget .form-heading, .form-widget h5, .form-widget h6 {
-  color: hsl(210, 100%, 4%);
-}
-.form-widget p, .form-widget .form-header .form-subheading, .form-header .form-widget .form-subheading, .form-widget .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .form-widget span, .form-widget span, .form-widget label, .form-widget input, .form-widget svg {
-  color: #001429;
-}
-.form-widget input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.48);
-}
-.form-widget input::placeholder {
-  color: rgba(0, 0, 0, 0.48);
-}
 @media screen and (min-width: 768px) {
   .form-widget .btn {
     font-size: 16px;
@@ -8802,34 +8977,6 @@ input::placeholder em {
 }
 .form-widget label {
   margin-left: 17px;
-}
-@media screen and (max-width: 379px) {
-  .form-widget {
-    padding: 24px 16px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .form-widget {
-    padding: 40px 32px;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .form-widget {
-    background-color: hsl(210, 100%, 4%);
-    color: hsl(210, 0%, 98%);
-  }
-  .form-widget h2, .form-widget h3, .form-widget h4, .form-widget .form-header .form-heading, .form-header .form-widget .form-heading, .form-widget h5, .form-widget h6 {
-    color: hsl(210, 0%, 98%);
-  }
-  .form-widget p, .form-widget .form-header .form-subheading, .form-header .form-widget .form-subheading, .form-widget .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .form-widget span, .form-widget span, .form-widget label, .form-widget input, .form-widget svg {
-    color: #f0f0f0;
-  }
-  .form-widget input::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.24);
-  }
-  .form-widget input::placeholder {
-    color: rgba(255, 255, 255, 0.24);
-  }
 }
 
 .form-progress {
@@ -9107,6 +9254,52 @@ input::placeholder em {
   }
   .spinner .spinner-background .spinner-foreground {
     background: hsl(210, 100%, 4%);
+  }
+}
+
+.card, .form-widget {
+  background-color: hsl(210, 0%, 98%);
+  color: hsl(210, 100%, 4%);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 8px, rgba(0, 0, 0, 0.16) 0px 2px 8px;
+}
+.card h2, .form-widget h2, .card h3, .form-widget h3, .card h4, .form-widget h4, .card .form-header .form-heading, .form-header .card .form-heading, .form-widget .form-header .form-heading, .form-header .form-widget .form-heading, .card h5, .form-widget h5, .card h6, .form-widget h6 {
+  color: hsl(210, 100%, 4%);
+}
+.card p, .form-widget p, .card .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .card span, .form-widget .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .form-widget span, .card .form-header .form-subheading, .form-header .card .form-subheading, .form-widget .form-header .form-subheading, .form-header .form-widget .form-subheading, .card span, .form-widget span, .card label, .form-widget label, .card input, .form-widget input, .card svg, .form-widget svg {
+  color: #001429;
+}
+.card input::-moz-placeholder, .form-widget input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.card input::placeholder, .form-widget input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+@media screen and (max-width: 379px) {
+  .card, .form-widget {
+    padding: 24px 16px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .card, .form-widget {
+    padding: 40px 32px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .card, .form-widget {
+    background-color: hsl(210, 100%, 4%);
+    color: hsl(210, 0%, 98%);
+  }
+  .card h2, .form-widget h2, .card h3, .form-widget h3, .card h4, .form-widget h4, .card .form-header .form-heading, .form-header .card .form-heading, .form-widget .form-header .form-heading, .form-header .form-widget .form-heading, .card h5, .form-widget h5, .card h6, .form-widget h6 {
+    color: hsl(210, 0%, 98%);
+  }
+  .card p, .form-widget p, .card .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .card span, .form-widget .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .form-widget span, .card .form-header .form-subheading, .form-header .card .form-subheading, .form-widget .form-header .form-subheading, .form-header .form-widget .form-subheading, .card span, .form-widget span, .card label, .form-widget label, .card input, .form-widget input, .card svg, .form-widget svg {
+    color: #f0f0f0;
+  }
+  .card input::-moz-placeholder, .form-widget input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+  .card input::placeholder, .form-widget input::placeholder {
+    color: rgba(255, 255, 255, 0.24);
   }
 }
 

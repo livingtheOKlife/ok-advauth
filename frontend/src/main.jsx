@@ -11,7 +11,10 @@ import store from './store.js'
 import { AlertProvider } from './context/alert/AlertContext.jsx'
 import { MenuProvider } from './context/menu/MenuContext.jsx'
 
+import PrivateRoute from './components/PrivateRoute.jsx'
+
 import HomePage from './pages/HomePage.jsx'
+import ProfilePage from './pages/ProfilePage.jsx'
 import RegisterPage from './pages/RegisterPage.jsx'
 import VerifyEmailPage from './pages/VerifyEmailPage.jsx'
 import LoginPage from './pages/LoginPage.jsx'
@@ -24,6 +27,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route index path='/' element={<HomePage />} />
+      <Route path='' element={<PrivateRoute />}>
+        <Route path='/profile' element={<ProfilePage />} />
+      </Route>
       <Route path='/register' element={<RegisterPage />} />
       <Route path='/verify-email' element={<VerifyEmailPage />} />
       <Route path='/login' element={<LoginPage />} />

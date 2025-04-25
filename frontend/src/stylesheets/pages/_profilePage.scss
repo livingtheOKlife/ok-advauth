@@ -1,0 +1,92 @@
+.profile-page {
+
+  @include setBackgroundColor(darken($light, 12%));
+
+  .profile-section {
+
+    &:first-of-type {
+
+      @extend .relative, .mb-32;
+      @include setHeadingFont(8px);
+      
+      .profile-heading {
+        
+        @extend .relative;
+        margin-bottom: -4px;
+
+      }
+
+      .profile-subheading {
+
+        @extend .absolute;
+        right: 20px;
+        font-weight: 300;
+
+        em {
+
+          @include setLogoFont(7px);
+  
+        }
+
+      }
+
+    }
+
+  }
+
+  dl {
+
+    @extend .flex, .flex-col, .align-center, .gap-16;
+    
+    li {
+      
+      @extend .flex, .flex, .align-center, .gap-8;
+      
+      dt, dd {
+
+        @extend .flex, .align-center, .gap-4;
+        @include setBodyFont(14px);
+
+        svg {
+
+          font-size: 14px;
+
+          &.red {
+
+            color: $red;
+
+          }
+
+          &.green {
+
+            color: $green;
+
+          }
+
+        }
+
+      }
+
+      dt {
+
+        font-weight: 600;
+
+      }
+
+    }
+
+  }
+
+  .nav-link {
+
+    @extend .mt-32;
+
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    
+    @include setBackgroundColor(lighten($dark, 2%));
+
+  }
+
+}
