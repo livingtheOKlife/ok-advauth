@@ -83,3 +83,11 @@ export const verifyEmail = asyncHandler(async (req, res) => {
     })
   }
 })
+
+export const logout = asyncHandler(async (req, res) => {
+  res.cookie('jwt', '', {
+    httpOnly: true,
+    expires: new Date(0),
+  })
+  res.status(200).json({ message: 'User logged out' })
+})

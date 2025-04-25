@@ -1,20 +1,35 @@
 import { useContext } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
+import { useLogoutMutation } from '../../slices/usersApiSlice'
+import { clearCredentials } from '../../slices/authSlice'
+
+import AlertContext from '../../context/alert/AlertContext'
 import MenuContext from '../../context/menu/MenuContext'
 
 import MenuBtn from '../MenuBtn'
 
 function HeaderContainer () {
   const { userInfo } = useSelector((state) => state.auth)
-  const userLoggedIn = userInfo.user
+  const { setAlertActive } = useContext(AlertContext)
   const { setMenuInactive } = useContext(MenuContext)
   const navigate = useNavigate()
   const location = useLocation()
+  const dispatch = useDispatch()
   const pathMatchRoute = (route) => {
     if (route === location.pathname) {
       return true
+    }
+  }
+  const [ logout ] = useLogoutMutation()
+  const logoutHandler = async () => {
+    try {
+      await logout().unwrap()
+      dispatch(clearCredentials())
+      navigate('/')
+    } catch (error) {
+      setAlertActive(`Log out failed - ${error}`, 'error')
     }
   }
   return (
@@ -24,19 +39,24 @@ function HeaderContainer () {
           <span className="logo"><em>OK</em>advauth</span>
         </Link>
         <ul className="main-nav-list">
-          {
-            userInfo ?
-              <>
-                {
-                  !pathMatchRoute('/verify-email') && !userLoggedIn.isVerified &&
-                    <li className="main-nav-item" onClick={() => navigate('/verify-email')}>Verify email</li>
-                }
-              </>
-            : <></>
+        {
+            userInfo && !userInfo.user.isVerified && !pathMatchRoute('/verify-email') ? 
+              <li className="main-nav-item" onClick={() => {
+                navigate('/verify-email')
+                setMenuInactive()
+              }}>Verify email</li>
+            : userInfo && userInfo.user.isVerified ?
+              <></>
+            :
+               <></>
           }
           {
             !pathMatchRoute('/about') &&
               <li className="main-nav-item" onClick={() => navigate('/about')}>About</li>
+          }
+          {
+            userInfo &&
+              <li className="main-nav-item" onClick={logoutHandler}>Logout</li>
           }
         </ul>
         <MenuBtn />

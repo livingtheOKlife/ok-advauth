@@ -15,7 +15,7 @@ function HomePage () {
           <div className="buttons">
             <Link to='/profile' className={`btn md`} >View profile</Link>
             {
-              userInfo.user.isVerified !== true && <Link to='/verify-email' className={`btn md`} >Verify account</Link>
+              userInfo.user.isVerified !== true && <Link to='/verify-email' className={`btn md`} >Verify email</Link>
             }
           </div>
         :
