@@ -22,7 +22,6 @@ function VerifyEmailPage () {
 	const userLoggedIn = userInfo.user
   const navigate = useNavigate()
 	const dispatch = useDispatch()
-	console.log(userInfo.user.isVerified)
   useEffect(() => {
     !userInfo && navigate('/')
 		userInfo.user.isVerified === true && navigate('/')

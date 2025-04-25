@@ -16,6 +16,7 @@ import RegisterPage from './pages/RegisterPage.jsx'
 import VerifyEmailPage from './pages/VerifyEmailPage.jsx'
 import LoginPage from './pages/LoginPage.jsx'
 import ForgotPasswordPage from './pages/ForgotPasswordPage.jsx'
+import ResetPasswordPage from './pages/ResetPasswordPage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import PageNotFoundPage from './pages/PageNotFoundPage.jsx'
 
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       <Route path='/verify-email' element={<VerifyEmailPage />} />
       <Route path='/login' element={<LoginPage />} />
       <Route path='/forgot-password' element={<ForgotPasswordPage />} />
+      <Route path='/reset-password/:token' element={<ResetPasswordPage />} />
       <Route path='/about' element={<AboutPage />} />
       <Route path='/page-not-found' element={<PageNotFoundPage />} />
       <Route path='/*' element={<Navigate to="/page-not-found" replace />} />

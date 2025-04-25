@@ -7,6 +7,7 @@ import generateToken from '../utils/generateToken.util.js'
 import sendVerificationEmail from '../utils/sendVerificationEmail.util.js'
 import sendWelcomeEmail from '../utils/sendWelcomeEmail.util.js'
 import sendForgotPasswordEmail from '../utils/sendForgotPasswordEmail.util.js'
+import sendPasswordResetEmail from '../utils/sendPasswordResetEmail.util.js'
 
 const CLIENT_URL = process.env.CLIENT_URL
 
@@ -135,5 +136,31 @@ export const forgotPassword = asyncHandler(async (req, res) => {
   } else {
     res.status(401)
     throw new Error('User not found, try signing up...')
+  }
+})
+
+export const resetPassword = asyncHandler(async (req, res) => {
+  const { token, password } = req.body
+  const user = await User.findOne({
+    resetPasswordToken: token,
+  })
+  if (user) {
+    user.password = password
+    user.resetPasswordToken = undefined
+    user.resetPasswordExpiresAt = undefined
+    await user.save()
+    generateToken(res, user._id)
+    // sendPasswordResetEmail(user.email)
+    res.status(200).json({
+      success: true,
+      message: 'Password updated successfully',
+      user: {
+        ...user._doc,
+        password: undefined,
+      },
+    })
+  } else {
+    res.status(400)
+    throw new Error('Invalid user data')
   }
 })

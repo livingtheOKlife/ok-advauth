@@ -2993,6 +2993,41 @@ input::placeholder em {
   }
 }
 
+.reset-password-page {
+  background-color: #dbdbdb;
+  color: hsl(210, 100%, 4%);
+}
+.reset-password-page h2, .reset-password-page h3, .reset-password-page h4, .reset-password-page .form-header .form-heading, .form-header .reset-password-page .form-heading, .reset-password-page h5, .reset-password-page h6 {
+  color: hsl(210, 100%, 4%);
+}
+.reset-password-page p, .reset-password-page .form-header .form-subheading, .form-header .reset-password-page .form-subheading, .reset-password-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .reset-password-page span, .reset-password-page span, .reset-password-page label, .reset-password-page input, .reset-password-page svg {
+  color: #001429;
+}
+.reset-password-page input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.reset-password-page input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+@media (prefers-color-scheme: dark) {
+  .reset-password-page {
+    background-color: #000f1f;
+    color: hsl(210, 0%, 98%);
+  }
+  .reset-password-page h2, .reset-password-page h3, .reset-password-page h4, .reset-password-page .form-header .form-heading, .form-header .reset-password-page .form-heading, .reset-password-page h5, .reset-password-page h6 {
+    color: hsl(210, 0%, 98%);
+  }
+  .reset-password-page p, .reset-password-page .form-header .form-subheading, .form-header .reset-password-page .form-subheading, .reset-password-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .reset-password-page span, .reset-password-page span, .reset-password-page label, .reset-password-page input, .reset-password-page svg {
+    color: #f0f0f0;
+  }
+  .reset-password-page input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+  .reset-password-page input::placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+}
+
 .about-page {
   background-color: #dbdbdb;
   color: hsl(210, 100%, 4%);
