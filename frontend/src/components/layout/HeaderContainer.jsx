@@ -22,10 +22,6 @@ function HeaderContainer () {
         </Link>
         <ul className="main-nav-list">
           {
-            !pathMatchRoute('/page-not-found') &&
-              <li className="main-nav-item" onClick={() => navigate('/page-not-found')}>Page not found</li>
-          }
-          {
             !pathMatchRoute('/about') &&
               <li className="main-nav-item" onClick={() => navigate('/about')}>About</li>
           }

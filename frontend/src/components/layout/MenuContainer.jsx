@@ -19,13 +19,6 @@ function MenuContainer () {
       <nav id="menu-nav">
         <ul className="menu-nav-list">
           {
-            !pathMatchRoute('/page-not-found') &&
-              <li className="menu-nav-item" onClick={() => {
-                navigate('/page-not-found')
-                setMenuInactive()
-              }}>Page not found</li>
-          }
-          {
             !pathMatchRoute('/about') &&
               <li className="menu-nav-item" onClick={() => {
                 navigate('/about')
