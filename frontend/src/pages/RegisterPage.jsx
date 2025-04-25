@@ -19,11 +19,7 @@ import FormWindow from '../components/shared/forms/formWindow'
 import FormDivider from '../components/shared/forms/FormDivider'
 import FormControl from '../components/shared/forms/FormControl'
 import FormSection from '../components/shared/forms/FormSection'
-import TextInput from '../components/shared/forms/inputs/TextInput'
-import EmailInput from '../components/shared/forms/inputs/EmailInput'
-import PasswordInput from '../components/shared/forms/inputs/PasswordInput'
 import Spinner from '../components/shared/Spinner'
-import DateInput from '../components/shared/forms/inputs/DateInput'
 
 function RegisterPage () {
   const { userInfo } = useSelector((state) => state.auth)

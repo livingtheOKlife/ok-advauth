@@ -2923,6 +2923,41 @@ input::placeholder em {
   }
 }
 
+.login-page {
+  background-color: #dbdbdb;
+  color: hsl(210, 100%, 4%);
+}
+.login-page h2, .login-page h3, .login-page h4, .login-page .form-header .form-heading, .form-header .login-page .form-heading, .login-page h5, .login-page h6 {
+  color: hsl(210, 100%, 4%);
+}
+.login-page p, .login-page .form-header .form-subheading, .form-header .login-page .form-subheading, .login-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .login-page span, .login-page span, .login-page label, .login-page input, .login-page svg {
+  color: #001429;
+}
+.login-page input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.login-page input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+@media (prefers-color-scheme: dark) {
+  .login-page {
+    background-color: #000f1f;
+    color: hsl(210, 0%, 98%);
+  }
+  .login-page h2, .login-page h3, .login-page h4, .login-page .form-header .form-heading, .form-header .login-page .form-heading, .login-page h5, .login-page h6 {
+    color: hsl(210, 0%, 98%);
+  }
+  .login-page p, .login-page .form-header .form-subheading, .form-header .login-page .form-subheading, .login-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .login-page span, .login-page span, .login-page label, .login-page input, .login-page svg {
+    color: #f0f0f0;
+  }
+  .login-page input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+  .login-page input::placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+}
+
 .about-page {
   background-color: #dbdbdb;
   color: hsl(210, 100%, 4%);

@@ -91,3 +91,22 @@ export const logout = asyncHandler(async (req, res) => {
   })
   res.status(200).json({ message: 'User logged out' })
 })
+
+export const login = asyncHandler(async (req, res) => {
+  const { email, password } = req.body
+  const user = await User.findOne({ email })
+  if (user && (await user.matchPassword(password))) {
+    generateToken(res, user._id)
+    res.status(200).json({
+      success: true,
+      message: 'User logged in',
+      user: {
+        ...user._doc,
+        password: undefined,
+      },
+    })
+  } else {
+    res.status(401)
+    throw new Error('Invalid email or password')
+  }
+})

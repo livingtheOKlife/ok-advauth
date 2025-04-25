@@ -48,7 +48,22 @@ function HeaderContainer () {
             : userInfo && userInfo.user.isVerified ?
               <></>
             :
-               <></>
+              <>
+                {
+                  !pathMatchRoute('/login') &&
+                    <li className="main-nav-item" onClick={() => {
+                      navigate('/login')
+                      setMenuInactive()
+                    }}>Sign in</li>
+                }
+                {
+                  !pathMatchRoute('/register') &&
+                    <li className="main-nav-item" onClick={() => {
+                      navigate('/register')
+                      setMenuInactive()
+                    }}>Sign up</li>
+                }
+              </>
           }
           {
             !pathMatchRoute('/about') &&

@@ -14,6 +14,7 @@ import { MenuProvider } from './context/menu/MenuContext.jsx'
 import HomePage from './pages/HomePage.jsx'
 import RegisterPage from './pages/RegisterPage.jsx'
 import VerifyEmailPage from './pages/VerifyEmailPage.jsx'
+import LoginPage from './pages/LoginPage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import PageNotFoundPage from './pages/PageNotFoundPage.jsx'
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route index path='/' element={<HomePage />} />
       <Route path='/register' element={<RegisterPage />} />
       <Route path='/verify-email' element={<VerifyEmailPage />} />
+      <Route path='/login' element={<LoginPage />} />
       <Route path='/about' element={<AboutPage />} />
       <Route path='/page-not-found' element={<PageNotFoundPage />} />
       <Route path='/*' element={<Navigate to="/page-not-found" replace />} />
