@@ -4,6 +4,7 @@ import User from '../models/user.model.js'
 
 import generateToken from '../utils/generateToken.util.js'
 import sendVerificationEmail from '../utils/sendVerificationEmail.util.js'
+import sendWelcomeEmail from '../utils/sendWelcomeEmail.util.js'
 
 export const register = asyncHandler(async (req, res) => {
   const { username, email, password, firstName, lastName, dateOfBirth } =
@@ -43,10 +44,38 @@ export const register = asyncHandler(async (req, res) => {
   })
   if (user) {
     generateToken(res, user._id)
-    sendVerificationEmail(user.email, verificationToken)
+    // sendVerificationEmail(user.email, verificationToken)
     res.status(201).json({
       success: true,
       message: 'User created successfully',
+      user: {
+        ...user._doc,
+        password: undefined,
+      },
+    })
+  }
+})
+
+export const verifyEmail = asyncHandler(async (req, res) => {
+  const { email, token } = req.body
+  const user = await User.findOne({
+    verificationToken: token,
+  })
+  if (!user) {
+    res.status(400)
+    throw new Error('Invalid or expired verification code')
+  } else if (user.email !== email) {
+    res.status(400)
+    throw new Error('Invalid or expired verification code')
+  } else {
+    user.isVerified = true
+    user.verificationToken = undefined
+    user.verificationTokenExpiresAt = undefined
+    await user.save()
+    // await sendWelcomeEmail(user.email, user.fullName)
+    res.status(200).json({
+      success: true,
+      message: 'Email successfully verified',
       user: {
         ...user._doc,
         password: undefined,
