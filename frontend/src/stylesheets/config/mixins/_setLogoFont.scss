@@ -1,15 +1,20 @@
 @mixin setLogoFont ($size) {
 
-  font-family: $brand;
+  font-family: $heading;
   font-size: $size;
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: 0;
   line-height: 1;
   
   em {
     
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: $brand;
+    font-size: calc($size - 2px);
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: $primary;
 
   }

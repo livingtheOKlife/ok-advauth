@@ -1388,7 +1388,7 @@ input::-ms-clear {
   margin-left: 2px;
 }
 
-.mr-2, #header-container #main-nav a .logo em, #header-container #main-nav .menu-btn {
+.mr-2, #header-container #main-nav .menu-btn {
   margin-right: 2px;
 }
 
@@ -2039,15 +2039,20 @@ input::-ms-clear {
 }
 
 .logo {
-  font-family: "Rock Salt", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: 0;
   line-height: 1;
 }
 .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
+  margin-right: 2px;
+  font-family: "Rock Salt", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
   color: hsl(210, 96%, 40%);
 }
 @media (prefers-color-scheme: dark) {
@@ -2068,37 +2073,25 @@ h2 em {
   letter-spacing: 0;
   color: hsl(210, 96%, 40%);
 }
-h2 .logo {
-  font-family: "Rock Salt", cursive;
-  font-size: 27.5862068966px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1;
-}
-h2 .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: hsl(210, 96%, 40%);
-}
-@media (prefers-color-scheme: dark) {
-  h2 .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
 @media screen and (max-width: 379px) {
   h2 {
     font-size: 27.5862068966px;
   }
   h2 .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 24.2424242424px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 27.5862068966px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h2 .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 25.5862068966px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2112,15 +2105,20 @@ h2 .logo em {
     font-size: 37.12px;
   }
   h2 .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 32px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 37.12px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h2 .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 35.12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2134,15 +2132,20 @@ h2 .logo em {
     font-size: 43.0592px;
   }
   h2 .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 37.12px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 42.24px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h2 .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 40.24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2169,37 +2172,25 @@ h3 em {
   letter-spacing: 0;
   color: hsl(210, 96%, 40%);
 }
-h3 .logo {
-  font-family: "Rock Salt", cursive;
-  font-size: 24.1379310345px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1;
-}
-h3 .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: hsl(210, 96%, 40%);
-}
-@media (prefers-color-scheme: dark) {
-  h3 .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
 @media screen and (max-width: 379px) {
   h3 {
     font-size: 24.1379310345px;
   }
   h3 .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 21.2121212121px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 24.1379310345px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h3 .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 22.1379310345px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2213,15 +2204,20 @@ h3 .logo em {
     font-size: 32.48px;
   }
   h3 .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 28px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 32.48px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h3 .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 30.48px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2235,15 +2231,20 @@ h3 .logo em {
     font-size: 37.6768px;
   }
   h3 .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 32.48px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 36.96px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h3 .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 34.96px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2269,37 +2270,25 @@ h4 em, .form-header .form-heading em {
   letter-spacing: 0;
   color: hsl(210, 96%, 40%);
 }
-h4 .logo, .form-header .form-heading .logo {
-  font-family: "Rock Salt", cursive;
-  font-size: 17.2413793103px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1;
-}
-h4 .logo em, .form-header .form-heading .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: hsl(210, 96%, 40%);
-}
-@media (prefers-color-scheme: dark) {
-  h4 .logo em, .form-header .form-heading .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
 @media screen and (max-width: 379px) {
   h4, .form-header .form-heading {
     font-size: 17.2413793103px;
   }
   h4 .logo, .form-header .form-heading .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 15.1515151515px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 17.2413793103px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h4 .logo em, .form-header .form-heading .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 15.2413793103px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2313,15 +2302,20 @@ h4 .logo em, .form-header .form-heading .logo em {
     font-size: 23.2px;
   }
   h4 .logo, .form-header .form-heading .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 20px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 23.2px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h4 .logo em, .form-header .form-heading .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 21.2px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2335,15 +2329,20 @@ h4 .logo em, .form-header .form-heading .logo em {
     font-size: 26.912px;
   }
   h4 .logo, .form-header .form-heading .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 23.2px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 26.4px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h4 .logo em, .form-header .form-heading .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 24.4px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2369,37 +2368,25 @@ h5 em {
   letter-spacing: 0;
   color: hsl(210, 96%, 40%);
 }
-h5 .logo {
-  font-family: "Rock Salt", cursive;
-  font-size: 15.5172413793px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1;
-}
-h5 .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: hsl(210, 96%, 40%);
-}
-@media (prefers-color-scheme: dark) {
-  h5 .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
 @media screen and (max-width: 379px) {
   h5 {
     font-size: 15.5172413793px;
   }
   h5 .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 13.6363636364px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 15.5172413793px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h5 .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 13.5172413793px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2413,15 +2400,20 @@ h5 .logo em {
     font-size: 20.88px;
   }
   h5 .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 18px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 20.88px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h5 .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 18.88px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2435,15 +2427,20 @@ h5 .logo em {
     font-size: 24.2208px;
   }
   h5 .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 20.88px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 23.76px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   h5 .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 21.76px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2877,37 +2874,25 @@ input::placeholder em {
   letter-spacing: 0;
   color: hsl(210, 96%, 40%);
 }
-.profile-page .profile-section:first-of-type .logo {
-  font-family: "Rock Salt", cursive;
-  font-size: 6.8965517241px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1;
-}
-.profile-page .profile-section:first-of-type .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: hsl(210, 96%, 40%);
-}
-@media (prefers-color-scheme: dark) {
-  .profile-page .profile-section:first-of-type .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
 @media screen and (max-width: 379px) {
   .profile-page .profile-section:first-of-type {
     font-size: 6.8965517241px;
   }
   .profile-page .profile-section:first-of-type .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 6.0606060606px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 6.8965517241px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   .profile-page .profile-section:first-of-type .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 4.8965517241px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2921,15 +2906,20 @@ input::placeholder em {
     font-size: 9.28px;
   }
   .profile-page .profile-section:first-of-type .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 8px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 9.28px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   .profile-page .profile-section:first-of-type .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 7.28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2943,15 +2933,20 @@ input::placeholder em {
     font-size: 10.7648px;
   }
   .profile-page .profile-section:first-of-type .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 9.28px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 10.56px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   .profile-page .profile-section:first-of-type .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 8.56px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -2971,13 +2966,20 @@ input::placeholder em {
 .profile-page .profile-section:first-of-type .profile-subheading {
   right: 20px;
   font-weight: 300;
+  color: hsl(210, 96%, 40%);
+}
+@media (prefers-color-scheme: dark) {
+  .profile-page .profile-section:first-of-type .profile-subheading {
+    color: hsl(32, 96%, 48%);
+  }
 }
 .profile-page .profile-section:first-of-type .profile-subheading em {
   font-family: "Rock Salt", cursive;
   font-size: 7px;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1;
+  color: hsl(210, 96%, 40%);
 }
 .profile-page .profile-section:first-of-type .profile-subheading em em {
   letter-spacing: -1px;
@@ -2986,6 +2988,11 @@ input::placeholder em {
 }
 @media (prefers-color-scheme: dark) {
   .profile-page .profile-section:first-of-type .profile-subheading em em {
+    color: hsl(32, 96%, 48%);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .profile-page .profile-section:first-of-type .profile-subheading em {
     color: hsl(32, 96%, 48%);
   }
 }
@@ -3312,16 +3319,21 @@ input::placeholder em {
   color: rgba(0, 0, 0, 0.48);
 }
 #header-container #main-nav .logo {
-  font-family: "Rock Salt", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: 0;
   line-height: 1;
   line-height: 1;
 }
 #header-container #main-nav .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
+  margin-right: 2px;
+  font-family: "Rock Salt", cursive;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
   color: hsl(210, 96%, 40%);
 }
 @media (prefers-color-scheme: dark) {
@@ -8578,37 +8590,25 @@ input::placeholder em {
   letter-spacing: 0;
   color: hsl(210, 96%, 40%);
 }
-#footer-container #footer-wrapper #brand .copyright .logo {
-  font-family: "Rock Salt", cursive;
-  font-size: 6.8965517241px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1;
-}
-#footer-container #footer-wrapper #brand .copyright .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: hsl(210, 96%, 40%);
-}
-@media (prefers-color-scheme: dark) {
-  #footer-container #footer-wrapper #brand .copyright .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
 @media screen and (max-width: 379px) {
   #footer-container #footer-wrapper #brand .copyright {
     font-size: 6.8965517241px;
   }
   #footer-container #footer-wrapper #brand .copyright .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 6.0606060606px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 6.8965517241px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   #footer-container #footer-wrapper #brand .copyright .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 4.8965517241px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -8622,15 +8622,20 @@ input::placeholder em {
     font-size: 9.28px;
   }
   #footer-container #footer-wrapper #brand .copyright .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 8px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 9.28px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   #footer-container #footer-wrapper #brand .copyright .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 7.28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -8644,15 +8649,20 @@ input::placeholder em {
     font-size: 10.7648px;
   }
   #footer-container #footer-wrapper #brand .copyright .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 9.28px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 10.56px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   #footer-container #footer-wrapper #brand .copyright .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 8.56px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -8678,37 +8688,25 @@ input::placeholder em {
   letter-spacing: 0;
   color: hsl(210, 96%, 40%);
 }
-#footer-container #footer-wrapper .right .logo {
-  font-family: "Rock Salt", cursive;
-  font-size: 6.8965517241px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1;
-}
-#footer-container #footer-wrapper .right .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: hsl(210, 96%, 40%);
-}
-@media (prefers-color-scheme: dark) {
-  #footer-container #footer-wrapper .right .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
 @media screen and (max-width: 379px) {
   #footer-container #footer-wrapper .right {
     font-size: 6.8965517241px;
   }
   #footer-container #footer-wrapper .right .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 6.0606060606px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 6.8965517241px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   #footer-container #footer-wrapper .right .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 4.8965517241px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -8722,15 +8720,20 @@ input::placeholder em {
     font-size: 9.28px;
   }
   #footer-container #footer-wrapper .right .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 8px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 9.28px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   #footer-container #footer-wrapper .right .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 7.28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -8744,15 +8747,20 @@ input::placeholder em {
     font-size: 10.7648px;
   }
   #footer-container #footer-wrapper .right .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 9.28px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 10.56px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   #footer-container #footer-wrapper .right .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 8.56px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -8805,37 +8813,25 @@ input::placeholder em {
   letter-spacing: 0;
   color: hsl(210, 96%, 40%);
 }
-#alert-zeta .alert-text .logo {
-  font-family: "Rock Salt", cursive;
-  font-size: 10.3448275862px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1;
-}
-#alert-zeta .alert-text .logo em {
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  color: hsl(210, 96%, 40%);
-}
-@media (prefers-color-scheme: dark) {
-  #alert-zeta .alert-text .logo em {
-    color: hsl(32, 96%, 48%);
-  }
-}
 @media screen and (max-width: 379px) {
   #alert-zeta .alert-text {
     font-size: 10.3448275862px;
   }
   #alert-zeta .alert-text .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 9.0909090909px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 10.3448275862px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   #alert-zeta .alert-text .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 8.3448275862px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -8849,15 +8845,20 @@ input::placeholder em {
     font-size: 13.92px;
   }
   #alert-zeta .alert-text .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 12px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 13.92px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   #alert-zeta .alert-text .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 11.92px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -8871,15 +8872,20 @@ input::placeholder em {
     font-size: 16.1472px;
   }
   #alert-zeta .alert-text .logo {
-    font-family: "Rock Salt", cursive;
-    font-size: 13.92px;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 15.84px;
+    font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0;
     line-height: 1;
   }
   #alert-zeta .alert-text .logo em {
-    letter-spacing: -1px;
-    text-transform: uppercase;
+    margin-right: 2px;
+    font-family: "Rock Salt", cursive;
+    font-size: 13.84px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
     color: hsl(210, 96%, 40%);
   }
 }
@@ -9774,20 +9780,4 @@ input[type=number]::placeholder em {
 }
 .tags .tag.php svg {
   color: #B0B3D6;
-}
-
-#header-container #main-nav a .logo {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0;
-  line-height: 1;
-}
-#header-container #main-nav a .logo em {
-  font-family: "Rock Salt", cursive;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1;
 }/*# sourceMappingURL=index.css.map */

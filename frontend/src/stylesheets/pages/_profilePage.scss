@@ -21,10 +21,24 @@
         @extend .absolute;
         right: 20px;
         font-weight: 300;
+        color: $primary;
 
+        @media (prefers-color-scheme: dark) {
+
+          color: $secondary;
+
+        }
+        
         em {
+          
+          @include setBrandFont(7px);
+          color: $primary;
 
-          @include setLogoFont(7px);
+          @media (prefers-color-scheme: dark) {
+
+            color: $secondary;
+
+          }
   
         }
 

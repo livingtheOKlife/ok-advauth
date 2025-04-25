@@ -13,19 +13,13 @@
 
   }
 
-  .logo {
-
-    @include setLogoFont(calc($size / 1.16));
-
-  }
-
   @media screen and (max-width: 379px) {
 
     font-size: calc($size / 1.16);
 
     .logo {
   
-      @include setLogoFont(calc($size / 1.32));
+      @include setLogoFont(calc($size / 1.16));
   
     }
 
@@ -37,7 +31,7 @@
 
     .logo {
   
-      @include setLogoFont($size);
+      @include setLogoFont($size * 1.16);
   
     }
     
@@ -49,7 +43,7 @@
 
     .logo {
   
-      @include setLogoFont(calc($size * 1.16));
+      @include setLogoFont(calc($size * 1.32));
   
     }
     
