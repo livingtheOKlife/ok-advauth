@@ -109,7 +109,7 @@ function RegisterPage () {
         firstName: getValues('firstName'),
         lastName: getValues('lastName'),
         dateOfBirth: getValues('dateOfBirth'),
-      })
+      }).unwrap()
       dispatch(setCredentials({...res}))
       setAlertActive(`Welcome, ${getValues('firstName')}!`, 'success')
       navigate('/')
@@ -133,7 +133,7 @@ function RegisterPage () {
                     minLength: { value: 2, message: 'Username must be at least 2 characters' },
                     maxLength: { value: 16, message: 'Username must be no more than 16 characters' },
                     pattern: {
-                      value: /^(?=[\w.-]{6,16}$)(?:[\d_.-]*[a-zA-Z]){3}[\w.-]*$/,
+                      value: /^(?=[\w.-])(?:[\d_.-]*[a-zA-Z]){3}[\w.-]*$/,
                       message: "Usernames can only contain letters, numbers, and _ . -",
                     },
                   })
