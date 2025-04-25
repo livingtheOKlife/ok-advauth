@@ -14,15 +14,17 @@
       .logo {
 
         font-family: $heading;
+        font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0;
         line-height: 1;
-
+        
         em {
-
+          
           @extend .mr-2;
           font-family: $brand;
+          font-size: 18px;
           font-weight: 600;
           letter-spacing: 0;
           line-height: 1;

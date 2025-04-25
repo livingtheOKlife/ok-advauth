@@ -1,6 +1,6 @@
 .btn {
 
-  @extend .flex, .align-center;
+  @extend .flex, .justify-center, .align-center;
   @include setBackgroundColor($primary);
   @include setMenuFont(12px);
   font-weight: 400;
@@ -16,6 +16,12 @@
   * {
 
     color: $light;
+
+  }
+
+  svg {
+    
+    @extend .mx-4;
 
   }
 

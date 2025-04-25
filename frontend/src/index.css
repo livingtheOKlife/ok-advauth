@@ -71,7 +71,7 @@ input::-ms-clear {
   margin: 0 auto;
 }
 
-.flex, .tags .tag, .tags, .input-btn, .ghost-btn, .btn, .menu-btn, .spinner .spinner-background, .form-control, .form-section .form-detail, .form-section, .form-divider, .form-progress .form-progress-details, .form-progress .form-progress-numbers, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper .buttons, .home-page .main-wrapper, .App {
+.flex, .tags .tag, .tags, .input-btn, .ghost-btn, .btn, .menu-btn, .spinner .spinner-background, .form-control .code-input, .form-control, .form-section .form-detail, .form-section, .form-divider, .form-progress .form-progress-details, .form-progress .form-progress-numbers, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #menu-container #menu-nav, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper .buttons, .home-page .main-wrapper, .App {
   display: flex;
 }
 
@@ -91,7 +91,7 @@ input::-ms-clear {
   display: inline-block;
 }
 
-.justify-center, .ghost-btn, .menu-btn, .spinner .spinner-background, #alert-zeta .alert-btn, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .register-page .main-wrapper .form-widget .form-window .form-divider .form-section:last-of-type, .home-page .main-wrapper .buttons, .home-page .main-wrapper {
+.justify-center, .ghost-btn, .btn, .menu-btn, .spinner .spinner-background, .form-control .code-input, #alert-zeta .alert-btn, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .register-page .main-wrapper .form-widget .form-window .form-divider .form-section:last-of-type, .home-page .main-wrapper .buttons, .home-page .main-wrapper {
   justify-content: center;
 }
 
@@ -107,7 +107,7 @@ input::-ms-clear {
   justify-content: end;
 }
 
-.align-center, .tags, .input-btn, .ghost-btn, .btn, .menu-btn, .spinner .spinner-background, .form-section .form-detail, .form-section, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #header-container #main-nav .main-nav-list, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper {
+.align-center, .tags, .input-btn, .ghost-btn, .btn, .menu-btn, .spinner .spinner-background, .form-control .code-input, .form-section .form-detail, .form-section, .form-header, .form-widget, #alert-zeta .alert-btn, #alert-zeta, #footer-container #footer-wrapper #brand, #footer-container #footer-wrapper, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, #menu-container #menu-nav .menu-nav-list, #header-container #main-nav .main-nav-list, #header-container #main-nav, .page-not-found-page .main-wrapper, .about-page .main-wrapper .about, .about-page .main-wrapper .about > div, .about-page .main-wrapper, .home-page .main-wrapper {
   align-items: center;
 }
 
@@ -135,7 +135,7 @@ input::-ms-clear {
   gap: 4px;
 }
 
-.gap-6, .ghost-btn.md, .btn.md {
+.gap-6, .ghost-btn.md, .btn.md, .form-control .code-input {
   gap: 6px;
 }
 
@@ -409,7 +409,7 @@ input::-ms-clear {
   height: 100%;
 }
 
-.w-100, .form-section, .form-window, .form-progress .form-progress-details .form-progress-detail, .form-progress .form-progress-details, .form-progress .form-progress-bar, #alert-zeta .alert-progress-bg .alert-progress-bar, #menu-container #menu-nav, input {
+.w-100, input, .form-section, .form-window, .form-progress .form-progress-details .form-progress-detail, .form-progress .form-progress-details, .form-progress .form-progress-bar, #alert-zeta .alert-progress-bg .alert-progress-bar, #menu-container #menu-nav {
   width: 100%;
 }
 
@@ -824,7 +824,7 @@ input::-ms-clear {
   padding-right: 12px;
 }
 
-.py-12, .ghost-btn.md, .btn.md, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item, input {
+.py-12, .ghost-btn.md, .btn.md, input, #menu-container #menu-nav button, #menu-container #menu-nav .menu-nav-list .menu-nav-item {
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -884,7 +884,7 @@ input::-ms-clear {
   padding-right: 20px;
 }
 
-.py-20 {
+.py-20, input[type=number] {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -1460,7 +1460,7 @@ input::-ms-clear {
   margin-bottom: 4px;
 }
 
-.mx-4 {
+.mx-4, .btn svg {
   margin-left: 4px;
   margin-right: 4px;
 }
@@ -1572,7 +1572,7 @@ input::-ms-clear {
   margin-right: 12px;
 }
 
-.mt-12 {
+.mt-12, .verify-email-page .form-text:first-of-type {
   margin-top: 12px;
 }
 
@@ -2636,27 +2636,11 @@ label em {
 }
 
 input {
-  background-color: hsl(210, 0%, 98%);
-  color: hsl(210, 100%, 4%);
   font-family: "Quicksand", sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.32;
-  border: 1px solid rgba(0, 0, 0, 0.16);
-  transition: all 0.08s ease-in-out;
-}
-input h2, input h3, input h4, input .form-header .form-heading, .form-header input .form-heading, input h5, input h6 {
-  color: hsl(210, 100%, 4%);
-}
-input p, input .form-header .form-subheading, .form-header input .form-subheading, input .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper input span, input span, input label, input input, input svg {
-  color: #001429;
-}
-input input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.48);
-}
-input input::placeholder {
-  color: rgba(0, 0, 0, 0.48);
 }
 input em {
   font-weight: 600;
@@ -2721,35 +2705,13 @@ input::placeholder em {
     font-size: 12px;
   }
 }
-input:active, input:focus, input:focus-visible {
-  scale: 1.02;
-  outline: none;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-input:invalid, input.invalid {
-  border: 1px solid #e89696;
-}
-@media (prefers-color-scheme: dark) {
+@media screen and (max-width: 379px) {
   input {
-    background-color: hsl(210, 100%, 4%);
-    color: hsl(210, 0%, 98%);
-    border-color: rgba(255, 255, 255, 0.12);
-  }
-  input h2, input h3, input h4, input .form-header .form-heading, .form-header input .form-heading, input h5, input h6 {
-    color: hsl(210, 0%, 98%);
-  }
-  input p, input .form-header .form-subheading, .form-header input .form-subheading, input .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper input span, input span, input label, input input, input svg {
-    color: #f0f0f0;
-  }
-  input input::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.24);
-  }
-  input input::placeholder {
-    color: rgba(255, 255, 255, 0.24);
+    font-size: 12px;
   }
 }
 
-.ta-center, .form-text,
+.ta-center, input[type=number], .form-text,
 .form-text > a, .form-progress .form-progress-details .form-progress-detail, .form-header .form-subheading, .page-not-found-page .main-wrapper, .about-page .main-wrapper h4, .about-page .main-wrapper .form-header .form-heading, .form-header .about-page .main-wrapper .form-heading, .about-page .main-wrapper p, .about-page .page-not-found-page .main-wrapper span, .page-not-found-page .about-page .main-wrapper span, .about-page .main-wrapper h3, .home-page .main-wrapper {
   text-align: center;
 }
@@ -2919,6 +2881,44 @@ input:invalid, input.invalid {
     color: rgba(255, 255, 255, 0.24);
   }
   .register-page input::placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+}
+
+.verify-email-page {
+  background-color: #dbdbdb;
+  color: hsl(210, 100%, 4%);
+}
+.verify-email-page h2, .verify-email-page h3, .verify-email-page h4, .verify-email-page .form-header .form-heading, .form-header .verify-email-page .form-heading, .verify-email-page h5, .verify-email-page h6 {
+  color: hsl(210, 100%, 4%);
+}
+.verify-email-page p, .verify-email-page .form-header .form-subheading, .form-header .verify-email-page .form-subheading, .verify-email-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .verify-email-page span, .verify-email-page span, .verify-email-page label, .verify-email-page input, .verify-email-page svg {
+  color: #001429;
+}
+.verify-email-page input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.verify-email-page input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+.verify-email-page .btn svg {
+  margin-bottom: -2px;
+}
+@media (prefers-color-scheme: dark) {
+  .verify-email-page {
+    background-color: #000f1f;
+    color: hsl(210, 0%, 98%);
+  }
+  .verify-email-page h2, .verify-email-page h3, .verify-email-page h4, .verify-email-page .form-header .form-heading, .form-header .verify-email-page .form-heading, .verify-email-page h5, .verify-email-page h6 {
+    color: hsl(210, 0%, 98%);
+  }
+  .verify-email-page p, .verify-email-page .form-header .form-subheading, .form-header .verify-email-page .form-subheading, .verify-email-page .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper .verify-email-page span, .verify-email-page span, .verify-email-page label, .verify-email-page input, .verify-email-page svg {
+    color: #f0f0f0;
+  }
+  .verify-email-page input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+  .verify-email-page input::placeholder {
     color: rgba(255, 255, 255, 0.24);
   }
 }
@@ -9005,6 +9005,133 @@ input:invalid, input.invalid {
   }
 }
 
+input {
+  background-color: hsl(210, 0%, 98%);
+  color: hsl(210, 100%, 4%);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  transition: all 0.08s ease-in-out;
+}
+input h2, input h3, input h4, input .form-header .form-heading, .form-header input .form-heading, input h5, input h6 {
+  color: hsl(210, 100%, 4%);
+}
+input p, input .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper input span, input .form-header .form-subheading, .form-header input .form-subheading, input span, input label, input input, input svg {
+  color: #001429;
+}
+input input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+input input::placeholder {
+  color: rgba(0, 0, 0, 0.48);
+}
+input:active, input:focus, input:focus-visible {
+  scale: 1.02;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+input:invalid, input.invalid {
+  border: 1px solid #e89696;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.32;
+  caret-color: transparent;
+  -moz-appearance: textfield;
+}
+input[type=number] em {
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.32;
+}
+@media screen and (min-width: 600px) {
+  input[type=number] {
+    font-size: 20.88px;
+  }
+}
+@media screen and (min-width: 768px) {
+  input[type=number] {
+    font-size: 24.2208px;
+  }
+}
+input[type=number]::-moz-placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.32;
+}
+input[type=number]::placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.32;
+}
+input[type=number]::-moz-placeholder em {
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.32;
+}
+input[type=number]::placeholder em {
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.32;
+}
+@media screen and (min-width: 600px) {
+  input[type=number]::-moz-placeholder {
+    font-size: 20.88px;
+  }
+  input[type=number]::placeholder {
+    font-size: 20.88px;
+  }
+}
+@media screen and (min-width: 768px) {
+  input[type=number]::-moz-placeholder {
+    font-size: 24.2208px;
+  }
+  input[type=number]::placeholder {
+    font-size: 24.2208px;
+  }
+}
+@media screen and (max-width: 379px) {
+  input[type=number]::-moz-placeholder {
+    font-size: 16px;
+  }
+  input[type=number]::placeholder {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 379px) {
+  input[type=number] {
+    font-size: 16px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  input {
+    background-color: hsl(210, 100%, 4%);
+    color: hsl(210, 0%, 98%);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+  input h2, input h3, input h4, input .form-header .form-heading, .form-header input .form-heading, input h5, input h6 {
+    color: hsl(210, 0%, 98%);
+  }
+  input p, input .page-not-found-page .main-wrapper span, .page-not-found-page .main-wrapper input span, input .form-header .form-subheading, .form-header input .form-subheading, input span, input label, input input, input svg {
+    color: #f0f0f0;
+  }
+  input input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+  input input::placeholder {
+    color: rgba(255, 255, 255, 0.24);
+  }
+}
+
 .menu-btn {
   background: none;
   border: none;
@@ -9353,6 +9480,7 @@ input:invalid, input.invalid {
 
 #header-container #main-nav a .logo {
   font-family: "Poppins", sans-serif;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0;
@@ -9360,6 +9488,7 @@ input:invalid, input.invalid {
 }
 #header-container #main-nav a .logo em {
   font-family: "Rock Salt", cursive;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1;

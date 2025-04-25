@@ -112,7 +112,7 @@ function RegisterPage () {
       }).unwrap()
       dispatch(setCredentials({...res}))
       setAlertActive(`Welcome, ${getValues('firstName')}!`, 'success')
-      navigate('/')
+      navigate('/verify-email')
     } catch (error) {
       setAlertActive(error.data.message, 'error')
     }

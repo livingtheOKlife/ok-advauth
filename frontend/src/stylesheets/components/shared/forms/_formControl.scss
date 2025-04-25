@@ -17,6 +17,12 @@
 
   }
 
+  .code-input {
+
+    @extend .flex, .align-center, .justify-center, .gap-6;
+
+  }
+
   .input-text {
 
     @extend .mx-16;

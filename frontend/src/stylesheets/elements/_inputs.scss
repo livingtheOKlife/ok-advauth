@@ -1,0 +1,66 @@
+input {
+
+  @extend .w-100, .px-16, .py-12, .br-6;
+  @include setBackgroundColor($light);
+  border: 1px solid rgb(0, 0, 0, 0.16);
+  transition: all 0.08s ease-in-out;
+  
+  &:active,
+  &:focus,
+  &:focus-visible {
+    
+    scale: 1.02;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  }
+
+  &:invalid, &.invalid {
+
+    border: 1px solid $red-light;
+    
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+    margin: 0;
+
+  }
+
+  &[type=number] {
+    
+    @extend .py-20, .ta-center;
+    @include setBodyFont(18px);
+    caret-color: transparent;
+    -moz-appearance: textfield;
+  
+    &::placeholder {
+      
+      @include setBodyFont(18px);
+  
+      @media screen and (max-width: 379px) {
+    
+        font-size: 16px;
+        
+      }
+  
+    } 
+  
+    @media screen and (max-width: 379px) {
+  
+      font-size: 16px;
+      
+    }
+
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    @include setBackgroundColor($dark);
+    border-color: rgb(255, 255, 255, 0.12);
+
+  }
+
+}

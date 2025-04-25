@@ -1,10 +1,6 @@
 input {
 
-  @extend .w-100, .px-16, .py-12, .br-6;
-  @include setBackgroundColor($light);
   @include setBodyFont(14px);
-  border: 1px solid rgb(0, 0, 0, 0.16);
-  transition: all 0.08s ease-in-out;
   
   &::placeholder {
     
@@ -16,29 +12,12 @@ input {
       
     }
 
-  }  
-  
-  &:active,
-  &:focus,
-  &:focus-visible {
+  } 
+
+  @media screen and (max-width: 379px) {
+
+    font-size: 12px;
     
-    scale: 1.02;
-    outline: none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
-
-  }
-
-  &:invalid, &.invalid {
-
-    border: 1px solid $red-light;
-    
-  }
-
-  @media (prefers-color-scheme: dark) {
-
-    @include setBackgroundColor($dark);
-    border-color: rgb(255, 255, 255, 0.12);
-
   }
 
 }
